@@ -1,0 +1,269 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Token dari Figma "Ambang — UI Responsif" (light/*, dark/*, brand/*) */
+:root {
+  --bg: #ece9e1;
+  --surface: #f5f3ee;
+  --fg: #020202;
+  --muted: #57554f;
+  --line: #cfcbc2;
+  --accent: #f2a900;
+  --on-accent: #020202;
+  --danger: #b42318;
+  color-scheme: light;
+}
+.dark {
+  --bg: #020202;
+  --surface: #0e0e0d;
+  --fg: #ece9e1;
+  --muted: #a19e96;
+  --line: #2b2a27;
+  --danger: #ff8a7a;
+  color-scheme: dark;
+}
+
+/* Blok berpalet terbalik (mis. modul terbuka, pita kategori) */
+.inverse {
+  --bg: #020202;
+  --surface: #0e0e0d;
+  --fg: #ece9e1;
+  --muted: #a19e96;
+  --line: #2b2a27;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+.dark .inverse {
+  --bg: #ece9e1;
+  --surface: #f5f3ee;
+  --fg: #020202;
+  --muted: #57554f;
+  --line: #cfcbc2;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-space), var(--font-inter), sans-serif;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-3 rounded-[6px] py-[14px] pr-[18px] pl-[22px] text-[15px] leading-none font-medium whitespace-nowrap select-none;
+    transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 -2px color-mix(in srgb, var(--fg) 18%, transparent);
+  }
+  .btn:active:not(:disabled) {
+    transform: translateY(0) scale(0.98);
+    box-shadow: none;
+  }
+  .btn:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+  .btn svg {
+    transition: transform 0.2s ease;
+  }
+  .btn:hover:not(:disabled) svg.arrow {
+    transform: translateX(4px);
+  }
+  .btn-primary {
+    @apply bg-fg text-bg;
+  }
+  .btn-secondary {
+    @apply border border-line bg-bg text-fg;
+  }
+  .btn-secondary:hover:not(:disabled) {
+    @apply border-fg;
+  }
+  .btn-accent {
+    @apply bg-accent text-on-accent;
+  }
+  .icon-btn {
+    @apply inline-flex size-11 items-center justify-center rounded-[6px] border border-line text-fg;
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+  }
+  .icon-btn:hover {
+    @apply border-fg bg-surface;
+  }
+  .icon-btn:active {
+    transform: scale(0.94);
+  }
+  .tag {
+    @apply inline-flex items-center rounded-[4px] border border-line px-3 py-1.5 text-[13px] leading-none font-medium;
+  }
+  .eyebrow {
+    @apply text-[12px] font-medium tracking-[0.06em] text-muted uppercase;
+  }
+  .card {
+    @apply rounded-[8px] border border-line bg-surface;
+  }
+  .field {
+    @apply w-full rounded-[6px] border border-line bg-bg px-3 py-2.5 text-[15px] text-fg;
+    transition: border-color 0.2s ease;
+  }
+  .field:hover,
+  .field:focus {
+    @apply border-fg outline-none;
+  }
+}
+
+/* ---------- Animasi ---------- */
+@keyframes rise {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes draw-x {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes ring-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.6; }
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+@keyframes blink {
+  50% { opacity: 0.35; }
+}
+@keyframes pop {
+  0% { transform: scale(0.96); }
+  60% { transform: scale(1.015); }
+  100% { transform: scale(1); }
+}
+@keyframes shake {
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+@keyframes tip-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+.anim-rise {
+  transform-origin: bottom;
+  animation: rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.anim-draw {
+  transform-origin: left;
+  animation: draw-x 1s cubic-bezier(0.6, 0, 0.2, 1) 0.6s both;
+}
+.anim-fade-up {
+  animation: fade-up 0.6s ease both;
+}
+.anim-float {
+  animation: float 5s ease-in-out infinite;
+}
+.anim-ring {
+  animation: ring-pulse 6s ease-in-out infinite;
+  transform-origin: center;
+}
+.anim-pop {
+  animation: pop 0.3s ease;
+}
+.anim-shake {
+  animation: shake 0.3s ease;
+}
+.anim-blink {
+  animation: blink 1s steps(2) infinite;
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+.tooltip {
+  animation: tip-in 0.15s ease;
+}
+
+/* Reveal saat elemen masuk viewport (lihat components/reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+.reveal .connector path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  transition: stroke-dashoffset 1.4s ease 0.2s;
+}
+.reveal.is-in .connector path {
+  stroke-dashoffset: 0;
+}
+
+/* Akordeon: animasi tinggi via grid-rows */
+.expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.expand[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.expand > * {
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  background: rgb(2 2 2 / 0.6);
+}
+dialog[open] {
+  animation: fade-up 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

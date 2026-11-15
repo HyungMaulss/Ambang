@@ -1,0 +1,32 @@
+{
+  "name": "ambang",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test --experimental-strip-types lib/*.test.ts",
+    "import-soal": "node --env-file=.env.local scripts/import-soal.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^3.3.0",
+    "@radix-ui/react-tooltip": "^1.4.1",
+    "@supabase/supabase-js": "^2.119.0",
+    "hyperformula": "^3.5.0",
+    "mammoth": "^1.13.0",
+    "next": "^15.5.29",
+    "next-themes": "^0.4.6",
+    "pdfjs-dist": "^6.5.438",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.9.3"
+  }
+}
