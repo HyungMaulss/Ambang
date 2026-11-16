@@ -4,223 +4,140 @@
     "name": "Tryout SKD · Paket 1",
     "year": 2024,
     "per_category_count": [
-      { "category": "TWK", "count": 30 },
-      { "category": "TIU", "count": 35 },
-      { "category": "TKP", "count": 45 }
+      {
+        "category": "TWK",
+        "count": 30
+      },
+      {
+        "category": "TIU",
+        "count": 35
+      },
+      {
+        "category": "TKP",
+        "count": 45
+      }
     ],
     "duration_min": 100,
-    "passing_grade": { "TWK": 65, "TIU": 80, "TKP": 166 }
+    "passing_grade": {
+      "TWK": 65,
+      "TIU": 80,
+      "TKP": 166
+    }
   },
   "categories": [
-    { "id": "TWK", "parent_id": null, "name": "Tes Wawasan Kebangsaan", "tooltip_text": "30 soal. Benar 5, salah 0. Ambang batas 65." },
-    { "id": "TWK-PILAR", "parent_id": "TWK", "name": "Pilar Negara", "tooltip_text": "Pancasila, UUD 1945, NKRI, Bhinneka Tunggal Ika." },
-    { "id": "TWK-NAS", "parent_id": "TWK", "name": "Nasionalisme", "tooltip_text": "Sejarah perjuangan dan sikap kebangsaan." },
-    { "id": "TWK-INT", "parent_id": "TWK", "name": "Integritas", "tooltip_text": "Kejujuran, antikorupsi, konsistensi." },
-    { "id": "TWK-BELA", "parent_id": "TWK", "name": "Bela Negara", "tooltip_text": "Hak dan kewajiban membela negara." },
-    { "id": "TWK-BHS", "parent_id": "TWK", "name": "Bahasa Indonesia", "tooltip_text": "Ejaan dan kaidah bahasa baku." },
-    { "id": "TIU", "parent_id": null, "name": "Tes Intelegensia Umum", "tooltip_text": "35 soal. Benar 5, salah 0. Ambang batas 80." },
-    { "id": "TIU-VER", "parent_id": "TIU", "name": "Verbal", "tooltip_text": "Sinonim, antonim, analogi." },
-    { "id": "TIU-NUM", "parent_id": "TIU", "name": "Numerik", "tooltip_text": "Hitungan, deret, soal cerita." },
-    { "id": "TIU-LOG", "parent_id": "TIU", "name": "Logika", "tooltip_text": "Silogisme dan penalaran analitis." },
-    { "id": "TKP", "parent_id": null, "name": "Tes Karakteristik Pribadi", "tooltip_text": "45 soal. Tiap opsi bernilai 1–5. Ambang batas 166." },
-    { "id": "TKP-PEL", "parent_id": "TKP", "name": "Pelayanan Publik", "tooltip_text": "Sikap melayani masyarakat." },
-    { "id": "TKP-JEJ", "parent_id": "TKP", "name": "Jejaring Kerja", "tooltip_text": "Koordinasi dan kerja sama." },
-    { "id": "TKP-SOS", "parent_id": "TKP", "name": "Sosial Budaya", "tooltip_text": "Adaptasi dan menghargai keberagaman." },
-    { "id": "TKP-TIK", "parent_id": "TKP", "name": "Teknologi Informasi", "tooltip_text": "Kemauan memakai teknologi untuk kerja." },
-    { "id": "TKP-PRO", "parent_id": "TKP", "name": "Profesionalisme", "tooltip_text": "Tanggung jawab dan prioritas kerja." },
-    { "id": "TKP-RAD", "parent_id": "TKP", "name": "Anti Radikalisme", "tooltip_text": "Menolak ujaran kebencian dan kekerasan." },
-    { "id": "PSI", "parent_id": null, "name": "Psikotes", "tooltip_text": "Bukan bagian SKD; muncul di SKB instansi tertentu." },
-    { "id": "PSI-UMUM", "parent_id": "PSI", "name": "Psikotes Umum", "tooltip_text": "Klasifikasi, deret, penalaran cepat." }
-  ],
-  "questions": [
     {
-      "category": "TWK-PILAR", "type": "single", "difficulty": 1,
-      "body": "Rumusan Pancasila yang sah dan berlaku sebagai dasar negara saat ini tercantum dalam …",
-      "options": ["Piagam Jakarta 22 Juni 1945", "Pidato Soekarno 1 Juni 1945", "Pembukaan UUD 1945 alinea keempat", "Pasal 1 UUD 1945", "Ketetapan MPR tentang P4"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Lima sila yang sah tercantum dalam Pembukaan UUD 1945 alinea keempat, disahkan PPKI pada 18 Agustus 1945. Piagam Jakarta dan pidato 1 Juni adalah tahap perumusan."
+      "id": "TWK",
+      "parent_id": null,
+      "name": "Tes Wawasan Kebangsaan",
+      "tooltip_text": "30 soal. Benar 5, salah 0. Ambang batas 65."
     },
     {
-      "category": "TWK-PILAR", "type": "single", "difficulty": 1,
-      "body": "Pasal 1 ayat (3) UUD NRI Tahun 1945 menegaskan bahwa Indonesia adalah …",
-      "options": ["negara kesatuan yang berbentuk republik", "negara hukum", "negara kepulauan yang berciri nusantara", "negara yang berdasar atas Ketuhanan Yang Maha Esa", "negara dengan kedaulatan di tangan presiden"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Pasal 1 ayat (3): “Negara Indonesia adalah negara hukum.” Ayat (1) mengatur bentuk negara kesatuan berbentuk republik, Pasal 25A negara kepulauan, Pasal 29 dasar Ketuhanan."
+      "id": "TWK-PILAR",
+      "parent_id": "TWK",
+      "name": "Pilar Negara",
+      "tooltip_text": "Pancasila, UUD 1945, NKRI, Bhinneka Tunggal Ika."
     },
     {
-      "category": "TWK-PILAR", "type": "single", "difficulty": 1,
-      "body": "Semboyan Bhinneka Tunggal Ika diambil dari kitab …",
-      "options": ["Sutasoma karya Mpu Tantular", "Negarakertagama karya Mpu Prapanca", "Arjunawiwaha karya Mpu Kanwa", "Pararaton", "Bharatayudha karya Mpu Sedah dan Mpu Panuluh"],
-      "scores": [5, 0, 0, 0, 0],
-      "explanation": "Frasa “Bhinneka tunggal ika tan hana dharma mangrwa” berasal dari Kakawin Sutasoma karya Mpu Tantular pada masa Majapahit."
+      "id": "TWK-NAS",
+      "parent_id": "TWK",
+      "name": "Nasionalisme",
+      "tooltip_text": "Sejarah perjuangan dan sikap kebangsaan."
     },
     {
-      "category": "TWK-NAS", "type": "single", "difficulty": 1,
-      "body": "Ikrar satu tanah air, satu bangsa, dan menjunjung bahasa persatuan Indonesia dibacakan pada …",
-      "options": ["20 Mei 1908", "28 Oktober 1928", "1 Juni 1945", "17 Agustus 1945", "10 November 1945"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Sumpah Pemuda diikrarkan pada Kongres Pemuda II, 28 Oktober 1928. 20 Mei 1908 adalah berdirinya Budi Utomo."
+      "id": "TWK-INT",
+      "parent_id": "TWK",
+      "name": "Integritas",
+      "tooltip_text": "Kejujuran, antikorupsi, konsistensi."
     },
     {
-      "category": "TWK-NAS", "type": "single", "difficulty": 2,
-      "body": "Sikap yang paling mencerminkan nasionalisme yang sehat dalam kehidupan sehari-hari adalah …",
-      "options": ["Menolak semua produk luar negeri tanpa kecuali", "Mengutamakan produk dalam negeri yang berkualitas sambil tetap bersaing secara sehat", "Menganggap budaya daerah sendiri paling unggul", "Hanya bergaul dengan sesama suku", "Mengikuti upacara bendera hanya bila diwajibkan"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Nasionalisme yang sehat mencintai produk dan budaya bangsa tanpa menjadi chauvinis atau menutup diri. Opsi lain mencerminkan sikap berlebihan atau sempit."
+      "id": "TWK-BELA",
+      "parent_id": "TWK",
+      "name": "Bela Negara",
+      "tooltip_text": "Hak dan kewajiban membela negara."
     },
     {
-      "category": "TWK-INT", "type": "single", "difficulty": 2,
-      "body": "Seorang pegawai ditawari hadiah oleh rekanan yang sedang mengikuti pengadaan di unitnya. Tindakan yang sesuai nilai integritas adalah …",
-      "options": ["Menerima karena nilainya kecil", "Menolak, dan bila sempat diterima, melaporkannya sebagai gratifikasi sesuai ketentuan", "Menerima lalu membagikannya ke rekan kerja", "Menerima setelah proses pengadaan selesai", "Meminta hadiah dikirim ke rumah agar tidak terlihat"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Gratifikasi yang berhubungan dengan jabatan wajib ditolak atau dilaporkan ke KPK paling lambat 30 hari kerja sejak diterima (UU 20/2001 Pasal 12C)."
+      "id": "TWK-BHS",
+      "parent_id": "TWK",
+      "name": "Bahasa Indonesia",
+      "tooltip_text": "Ejaan dan kaidah bahasa baku."
     },
     {
-      "category": "TWK-BELA", "type": "single", "difficulty": 2,
-      "body": "Menurut Pasal 27 ayat (3) UUD NRI Tahun 1945, setiap warga negara berhak dan wajib ikut serta dalam …",
-      "options": ["upaya pembelaan negara", "memajukan kebudayaan nasional", "memperoleh pendidikan dasar", "menjunjung hukum dan pemerintahan", "usaha pertahanan dan keamanan negara"],
-      "scores": [5, 0, 0, 0, 0],
-      "explanation": "Pasal 27 ayat (3) mengatur upaya pembelaan negara. “Usaha pertahanan dan keamanan negara” adalah bunyi Pasal 30 ayat (1), sering jadi pengecoh."
+      "id": "TIU",
+      "parent_id": null,
+      "name": "Tes Intelegensia Umum",
+      "tooltip_text": "35 soal. Benar 5, salah 0. Ambang batas 80."
     },
     {
-      "category": "TWK-BHS", "type": "single", "difficulty": 1,
-      "body": "Penulisan kata yang baku menurut kaidah bahasa Indonesia adalah …",
-      "options": ["analisa", "apotik", "kualitas", "resiko", "nasehat"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Bentuk baku: analisis, apotek, kualitas, risiko, nasihat. Hanya “kualitas” yang sudah baku."
+      "id": "TIU-VER",
+      "parent_id": "TIU",
+      "name": "Verbal",
+      "tooltip_text": "Sinonim, antonim, analogi."
     },
     {
-      "category": "TIU-NUM", "type": "single", "difficulty": 1,
-      "body": "Jika 3x + 7 = 25, berapakah nilai 2x − 4?",
-      "options": ["4", "6", "8", "10", "12"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "3x = 18 sehingga x = 6. Maka 2x − 4 = 12 − 4 = 8."
+      "id": "TIU-NUM",
+      "parent_id": "TIU",
+      "name": "Numerik",
+      "tooltip_text": "Hitungan, deret, soal cerita."
     },
     {
-      "category": "TIU-NUM", "type": "single", "difficulty": 1,
-      "body": "Harga sebuah buku setelah diskon 20% adalah Rp48.000. Berapa harga sebelum diskon?",
-      "options": ["Rp56.000", "Rp57.600", "Rp58.000", "Rp60.000", "Rp62.000"],
-      "scores": [0, 0, 0, 5, 0],
-      "explanation": "Harga setelah diskon = 80% × harga awal. Harga awal = 48.000 ÷ 0,8 = 60.000."
+      "id": "TIU-LOG",
+      "parent_id": "TIU",
+      "name": "Logika",
+      "tooltip_text": "Silogisme dan penalaran analitis."
     },
     {
-      "category": "TIU-NUM", "type": "single", "difficulty": 2,
-      "body": "Lanjutan deret 2, 6, 12, 20, 30, … adalah",
-      "options": ["40", "42", "44", "46", "48"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Selisihnya 4, 6, 8, 10, lalu 12. Jadi 30 + 12 = 42 (pola n × (n + 1))."
+      "id": "TKP",
+      "parent_id": null,
+      "name": "Tes Karakteristik Pribadi",
+      "tooltip_text": "45 soal. Tiap opsi bernilai 1–5. Ambang batas 166."
     },
     {
-      "category": "TIU-NUM", "type": "single", "difficulty": 2,
-      "body": "A dapat menyelesaikan pekerjaan dalam 6 hari dan B dalam 3 hari. Jika bekerja bersama, pekerjaan selesai dalam … hari.",
-      "options": ["1,5", "2", "2,5", "3", "4,5"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Per hari: 1/6 + 1/3 = 1/6 + 2/6 = 1/2 pekerjaan. Jadi selesai dalam 2 hari."
+      "id": "TKP-PEL",
+      "parent_id": "TKP",
+      "name": "Pelayanan Publik",
+      "tooltip_text": "Sikap melayani masyarakat."
     },
     {
-      "category": "TIU-NUM", "type": "single", "difficulty": 1,
-      "body": "Nilai dari 15% × 240 + 0,25 × 64 adalah …",
-      "options": ["48", "50", "52", "54", "56"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "15% × 240 = 36 dan 0,25 × 64 = 16. Jumlahnya 52."
+      "id": "TKP-JEJ",
+      "parent_id": "TKP",
+      "name": "Jejaring Kerja",
+      "tooltip_text": "Koordinasi dan kerja sama."
     },
     {
-      "category": "TIU-VER", "type": "single", "difficulty": 2,
-      "body": "Sinonim kata AMBIGU adalah …",
-      "options": ["lugas", "taksa", "tegas", "tunggal", "rinci"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Ambigu berarti bermakna lebih dari satu; padanannya “taksa”. Lugas dan tegas justru berlawanan maknanya."
+      "id": "TKP-SOS",
+      "parent_id": "TKP",
+      "name": "Sosial Budaya",
+      "tooltip_text": "Adaptasi dan menghargai keberagaman."
     },
     {
-      "category": "TIU-VER", "type": "single", "difficulty": 2,
-      "body": "Antonim kata SPORADIS adalah …",
-      "options": ["jarang", "tersebar", "kerap", "acak", "langka"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Sporadis berarti terjadi sesekali atau tidak tentu. Lawannya “kerap” (sering)."
+      "id": "TKP-TIK",
+      "parent_id": "TKP",
+      "name": "Teknologi Informasi",
+      "tooltip_text": "Kemauan memakai teknologi untuk kerja."
     },
     {
-      "category": "TIU-VER", "type": "single", "difficulty": 1,
-      "body": "DOKTER : STETOSKOP = FOTOGRAFER : …",
-      "options": ["foto", "studio", "kamera", "model", "album"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Hubungannya profesi dan alat kerja utamanya. Alat kerja fotografer adalah kamera; foto adalah hasilnya."
+      "id": "TKP-PRO",
+      "parent_id": "TKP",
+      "name": "Profesionalisme",
+      "tooltip_text": "Tanggung jawab dan prioritas kerja."
     },
     {
-      "category": "TIU-LOG", "type": "single", "difficulty": 2,
-      "body": "Semua pegawai yang lulus pelatihan mendapat sertifikat. Sebagian pegawai unit A tidak mendapat sertifikat. Simpulan yang tepat adalah …",
-      "options": ["Semua pegawai unit A tidak lulus pelatihan", "Sebagian pegawai unit A tidak lulus pelatihan", "Semua pegawai unit A lulus pelatihan", "Sebagian pegawai unit A lulus tetapi tidak bersertifikat", "Tidak dapat ditarik simpulan"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "Lulus → bersertifikat. Yang tidak bersertifikat pasti tidak lulus (modus tollens). Karena hanya sebagian yang tidak bersertifikat, simpulannya “sebagian tidak lulus”."
+      "id": "TKP-RAD",
+      "parent_id": "TKP",
+      "name": "Anti Radikalisme",
+      "tooltip_text": "Menolak ujaran kebencian dan kekerasan."
     },
     {
-      "category": "TIU-LOG", "type": "single", "difficulty": 1,
-      "body": "Jika hari hujan, jalan basah. Hari ini jalan tidak basah. Simpulan yang tepat adalah …",
-      "options": ["Hari hujan", "Hari tidak hujan", "Jalan licin", "Hari mungkin hujan", "Tidak dapat disimpulkan"],
-      "scores": [0, 5, 0, 0, 0],
-      "explanation": "p → q, ~q, maka ~p (modus tollens). Jalan tidak basah berarti hari tidak hujan."
+      "id": "PSI",
+      "parent_id": null,
+      "name": "Psikotes",
+      "tooltip_text": "Bukan bagian SKD; muncul di SKB instansi tertentu."
     },
     {
-      "category": "TIU-LOG", "type": "single", "difficulty": 1,
-      "body": "Andi lebih tinggi dari Budi. Citra lebih pendek dari Budi. Dewi lebih tinggi dari Andi. Siapa yang paling pendek?",
-      "options": ["Andi", "Budi", "Citra", "Dewi", "Tidak dapat ditentukan"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Urutan dari tertinggi: Dewi > Andi > Budi > Citra. Yang paling pendek adalah Citra."
-    },
-    {
-      "category": "TKP-PEL", "type": "weighted", "difficulty": 2,
-      "body": "Seorang warga datang ke loket Anda lima menit sebelum layanan tutup dengan berkas yang belum lengkap. Sikap Anda …",
-      "options": ["Meminta warga kembali besok karena layanan hampir tutup", "Menolak berkas karena tidak lengkap", "Menjelaskan kekurangan berkas dengan ramah, memberi daftar persyaratan tertulis, dan memastikan warga tahu kapan bisa kembali", "Menerima berkas yang ada dan meminta sisanya menyusul bila aturan memungkinkan", "Menyarankan warga bertanya ke petugas lain"],
-      "scores": [3, 1, 5, 4, 2],
-      "explanation": "Nilai tertinggi untuk sikap yang tetap melayani, jelas, dan memberi kepastian tanpa melanggar prosedur. Melempar ke petugas lain atau menolak mentah-mentah bernilai rendah."
-    },
-    {
-      "category": "TKP-JEJ", "type": "weighted", "difficulty": 2,
-      "body": "Anda memimpin proyek lintas unit, tetapi unit lain lambat mengirim data yang Anda butuhkan. Sikap Anda …",
-      "options": ["Menunggu sampai mereka mengirim data", "Melaporkan keterlambatan ke atasan tanpa menghubungi unit tersebut", "Menghubungi penanggung jawab unit itu, menjelaskan kebutuhan dan tenggat, lalu menyepakati jadwal pengiriman", "Mengirim surel pengingat secara berkala", "Mencari data pembanding dari sumber lain sambil tetap berkoordinasi"],
-      "scores": [1, 2, 5, 3, 4],
-      "explanation": "Jejaring kerja menilai inisiatif membangun koordinasi langsung dan kesepakatan. Pasif menunggu bernilai paling rendah."
-    },
-    {
-      "category": "TKP-SOS", "type": "weighted", "difficulty": 1,
-      "body": "Di tempat kerja baru, rekan-rekan Anda berasal dari latar budaya yang berbeda dan punya kebiasaan yang asing bagi Anda. Sikap Anda …",
-      "options": ["Lebih sering bergaul dengan rekan yang sedaerah", "Bersikap netral dan tidak terlalu ikut campur", "Mempelajari kebiasaan mereka, menghargai perbedaan, dan aktif menjalin keakraban", "Menghormati kebiasaan mereka meski belum memahaminya", "Meminta mereka menyesuaikan diri dengan kebiasaan Anda"],
-      "scores": [2, 3, 5, 4, 1],
-      "explanation": "Sikap adaptif dan proaktif menghargai keberagaman mendapat nilai tertinggi; memaksakan kebiasaan sendiri terendah."
-    },
-    {
-      "category": "TKP-TIK", "type": "weighted", "difficulty": 1,
-      "body": "Kantor Anda menerapkan aplikasi persuratan elektronik baru yang belum Anda kuasai. Sikap Anda …",
-      "options": ["Tetap memakai cara manual karena lebih nyaman", "Meminta rekan mengoperasikannya untuk Anda", "Mempelajari panduan dan berlatih hingga mahir, lalu membantu rekan yang kesulitan", "Mempelajarinya saat ada pelatihan resmi", "Mempelajarinya sendiri saat ada waktu luang"],
-      "scores": [1, 2, 5, 3, 4],
-      "explanation": "Nilai tertinggi untuk kemauan belajar teknologi secara aktif dan berbagi ke tim."
-    },
-    {
-      "category": "TKP-PRO", "type": "weighted", "difficulty": 2,
-      "body": "Atasan memberi tugas mendesak saat Anda sedang menyelesaikan pekerjaan lain yang juga bertenggat. Sikap Anda …",
-      "options": ["Mengerjakan tugas baru dan meninggalkan pekerjaan lama", "Menolak tugas baru", "Menyampaikan beban kerja saat ini, menyepakati prioritas dengan atasan, lalu bekerja sesuai kesepakatan", "Mengerjakan keduanya bersamaan semampunya", "Lembur agar keduanya selesai tepat waktu"],
-      "scores": [2, 1, 5, 3, 4],
-      "explanation": "Profesionalisme berarti transparan soal kapasitas dan menyepakati prioritas, bukan menolak atau mengorbankan pekerjaan lain diam-diam."
-    },
-    {
-      "category": "TKP-RAD", "type": "weighted", "difficulty": 2,
-      "body": "Di grup percakapan kantor, seorang rekan membagikan unggahan yang menyudutkan kelompok agama tertentu dan mengajak membenci mereka. Sikap Anda …",
-      "options": ["Ikut menanggapi dengan emosi", "Mengabaikannya", "Mengingatkan secara santun dengan alasan yang jelas, dan melapor ke admin atau atasan bila berlanjut", "Keluar dari grup", "Mengingatkan rekan tersebut secara pribadi"],
-      "scores": [1, 2, 5, 3, 4],
-      "explanation": "Sikap antiradikalisme yang terbaik menolak ujaran kebencian secara aktif namun santun, dan memakai jalur resmi bila perlu."
-    },
-    {
-      "category": "PSI-UMUM", "type": "single", "difficulty": 1,
-      "body": "Manakah yang tidak termasuk kelompoknya: Merkurius, Venus, Bulan, Mars, Jupiter?",
-      "options": ["Merkurius", "Venus", "Bulan", "Mars", "Jupiter"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Semua adalah planet kecuali Bulan, yang merupakan satelit Bumi."
-    },
-    {
-      "category": "PSI-UMUM", "type": "single", "difficulty": 2,
-      "body": "Lanjutan deret 5, 10, 9, 18, 17, … adalah",
-      "options": ["32", "33", "34", "35", "36"],
-      "scores": [0, 0, 5, 0, 0],
-      "explanation": "Polanya ×2 lalu −1 bergantian: 5→10→9→18→17→34."
+      "id": "PSI-UMUM",
+      "parent_id": "PSI",
+      "name": "Psikotes Umum",
+      "tooltip_text": "Klasifikasi, deret, penalaran cepat."
     }
   ]
 }

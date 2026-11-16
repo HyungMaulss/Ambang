@@ -1,0 +1,781 @@
+{
+  "questions": [
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Rumusan Pancasila yang sah dan berlaku sebagai dasar negara saat ini tercantum dalam …",
+      "options": [
+        "Piagam Jakarta 22 Juni 1945",
+        "Pidato Soekarno 1 Juni 1945",
+        "Pembukaan UUD 1945 alinea keempat",
+        "Pasal 1 UUD 1945",
+        "Ketetapan MPR tentang P4"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Lima sila yang sah tercantum dalam Pembukaan UUD 1945 alinea keempat, disahkan PPKI pada 18 Agustus 1945. Piagam Jakarta dan pidato 1 Juni adalah tahap perumusan."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Pasal 1 ayat (3) UUD NRI Tahun 1945 menegaskan bahwa Indonesia adalah …",
+      "options": [
+        "negara kesatuan yang berbentuk republik",
+        "negara hukum",
+        "negara kepulauan yang berciri nusantara",
+        "negara yang berdasar atas Ketuhanan Yang Maha Esa",
+        "negara dengan kedaulatan di tangan presiden"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Pasal 1 ayat (3): “Negara Indonesia adalah negara hukum.” Ayat (1) mengatur bentuk negara kesatuan berbentuk republik, Pasal 25A negara kepulauan, Pasal 29 dasar Ketuhanan."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Semboyan Bhinneka Tunggal Ika diambil dari kitab …",
+      "options": [
+        "Sutasoma karya Mpu Tantular",
+        "Negarakertagama karya Mpu Prapanca",
+        "Arjunawiwaha karya Mpu Kanwa",
+        "Pararaton",
+        "Bharatayudha karya Mpu Sedah dan Mpu Panuluh"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Frasa “Bhinneka tunggal ika tan hana dharma mangrwa” berasal dari Kakawin Sutasoma karya Mpu Tantular pada masa Majapahit."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Ikrar satu tanah air, satu bangsa, dan menjunjung bahasa persatuan Indonesia dibacakan pada …",
+      "options": [
+        "20 Mei 1908",
+        "28 Oktober 1928",
+        "1 Juni 1945",
+        "17 Agustus 1945",
+        "10 November 1945"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Sumpah Pemuda diikrarkan pada Kongres Pemuda II, 28 Oktober 1928. 20 Mei 1908 adalah berdirinya Budi Utomo."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sikap yang paling mencerminkan nasionalisme yang sehat dalam kehidupan sehari-hari adalah …",
+      "options": [
+        "Menolak semua produk luar negeri tanpa kecuali",
+        "Mengutamakan produk dalam negeri yang berkualitas sambil tetap bersaing secara sehat",
+        "Menganggap budaya daerah sendiri paling unggul",
+        "Hanya bergaul dengan sesama suku",
+        "Mengikuti upacara bendera hanya bila diwajibkan"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Nasionalisme yang sehat mencintai produk dan budaya bangsa tanpa menjadi chauvinis atau menutup diri. Opsi lain mencerminkan sikap berlebihan atau sempit."
+    },
+    {
+      "category": "TWK-INT",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Seorang pegawai ditawari hadiah oleh rekanan yang sedang mengikuti pengadaan di unitnya. Tindakan yang sesuai nilai integritas adalah …",
+      "options": [
+        "Menerima karena nilainya kecil",
+        "Menolak, dan bila sempat diterima, melaporkannya sebagai gratifikasi sesuai ketentuan",
+        "Menerima lalu membagikannya ke rekan kerja",
+        "Menerima setelah proses pengadaan selesai",
+        "Meminta hadiah dikirim ke rumah agar tidak terlihat"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Gratifikasi yang berhubungan dengan jabatan wajib ditolak atau dilaporkan ke KPK paling lambat 30 hari kerja sejak diterima (UU 20/2001 Pasal 12C)."
+    },
+    {
+      "category": "TWK-BELA",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Menurut Pasal 27 ayat (3) UUD NRI Tahun 1945, setiap warga negara berhak dan wajib ikut serta dalam …",
+      "options": [
+        "upaya pembelaan negara",
+        "memajukan kebudayaan nasional",
+        "memperoleh pendidikan dasar",
+        "menjunjung hukum dan pemerintahan",
+        "usaha pertahanan dan keamanan negara"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Pasal 27 ayat (3) mengatur upaya pembelaan negara. “Usaha pertahanan dan keamanan negara” adalah bunyi Pasal 30 ayat (1), sering jadi pengecoh."
+    },
+    {
+      "category": "TWK-BHS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Penulisan kata yang baku menurut kaidah bahasa Indonesia adalah …",
+      "options": [
+        "analisa",
+        "apotik",
+        "kualitas",
+        "resiko",
+        "nasehat"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Bentuk baku: analisis, apotek, kualitas, risiko, nasihat. Hanya “kualitas” yang sudah baku."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Pancasila disahkan sebagai dasar negara oleh PPKI pada tanggal …",
+      "options": [
+        "22 Juni 1945",
+        "29 Mei 1945",
+        "1 Juni 1945",
+        "18 Agustus 1945",
+        "17 Agustus 1945"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "PPKI mengesahkan UUD 1945 beserta Pembukaannya, yang memuat rumusan Pancasila, pada 18 Agustus 1945. 29 Mei adalah awal sidang BPUPKI, 1 Juni pidato Soekarno, 22 Juni Piagam Jakarta."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Lambang sila keempat Pancasila pada perisai Garuda adalah …",
+      "options": [
+        "Padi dan kapas",
+        "Bintang",
+        "Rantai",
+        "Kepala banteng",
+        "Pohon beringin"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Urutan lambang: bintang (sila 1), rantai (sila 2), pohon beringin (sila 3), kepala banteng (sila 4), padi dan kapas (sila 5)."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Perubahan (amandemen) UUD 1945 pada periode 1999–2002 dilakukan sebanyak …",
+      "options": [
+        "dua kali",
+        "enam kali",
+        "lima kali",
+        "empat kali",
+        "tiga kali"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "MPR mengamandemen UUD 1945 empat kali: 1999, 2000, 2001, dan 2002."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Ketentuan bahwa bumi, air, dan kekayaan alam yang terkandung di dalamnya dikuasai oleh negara dan dipergunakan untuk sebesar-besar kemakmuran rakyat terdapat dalam …",
+      "options": [
+        "Pasal 33 ayat (3)",
+        "Pasal 34 ayat (1)",
+        "Pasal 27 ayat (2)",
+        "Pasal 28A",
+        "Pasal 31 ayat (1)"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Pasal 33 ayat (3) UUD 1945 mengatur penguasaan sumber daya alam oleh negara. Pasal 34 ayat (1) tentang fakir miskin, Pasal 31 tentang pendidikan."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lembaga negara yang berwenang mengubah dan menetapkan Undang-Undang Dasar adalah …",
+      "options": [
+        "DPR",
+        "Mahkamah Konstitusi",
+        "MPR",
+        "Presiden",
+        "DPD"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Pasal 3 ayat (1) UUD 1945: MPR berwenang mengubah dan menetapkan Undang-Undang Dasar."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Kewenangan menguji undang-undang terhadap Undang-Undang Dasar dimiliki oleh …",
+      "options": [
+        "Mahkamah Agung",
+        "MPR",
+        "Komisi Yudisial",
+        "Mahkamah Konstitusi",
+        "DPR"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Pasal 24C ayat (1) UUD 1945. Mahkamah Agung menguji peraturan di bawah undang-undang terhadap undang-undang, bukan undang-undang terhadap UUD."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Konsep laut sebagai pemersatu wilayah kepulauan Indonesia pertama kali dinyatakan melalui …",
+      "options": [
+        "Konferensi Meja Bundar 1949",
+        "Sumpah Pemuda 1928",
+        "Konferensi Asia Afrika 1955",
+        "Dekrit Presiden 1959",
+        "Deklarasi Djuanda 1957"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Deklarasi Djuanda (13 Desember 1957) menyatakan laut di antara pulau-pulau sebagai bagian wilayah Indonesia, cikal bakal wawasan nusantara."
+    },
+    {
+      "category": "TWK-PILAR",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Perilaku yang mencerminkan pengamalan sila kedua Pancasila adalah …",
+      "options": [
+        "Bersikap adil terhadap sesama",
+        "Mencintai tanah air dan bangsa",
+        "Menghormati kebebasan menjalankan ibadah",
+        "Mengakui persamaan derajat dan hak setiap manusia",
+        "Bermusyawarah untuk mencapai mufakat"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Sila kedua (kemanusiaan yang adil dan beradab) menekankan persamaan derajat dan hak asasi. Musyawarah = sila 4, cinta tanah air = sila 3, kebebasan beribadah = sila 1, adil terhadap sesama = sila 5."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Organisasi pergerakan nasional yang berdiri pada 20 Mei 1908 dan tanggalnya diperingati sebagai Hari Kebangkitan Nasional adalah …",
+      "options": [
+        "Perhimpunan Indonesia",
+        "Indische Partij",
+        "Budi Utomo",
+        "Partai Nasional Indonesia",
+        "Sarekat Islam"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Budi Utomo didirikan pada 20 Mei 1908 oleh para pelajar STOVIA."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Naskah proklamasi kemerdekaan yang dirumuskan tulisan tangan kemudian diketik oleh …",
+      "options": [
+        "Mohammad Hatta",
+        "Sukarni",
+        "Sayuti Melik",
+        "Soekarno",
+        "Ahmad Soebardjo"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Sayuti Melik mengetik naskah proklamasi dengan beberapa perubahan kata, misalnya “tempoh” menjadi “tempo”."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Latar belakang utama peristiwa Rengasdengklok pada 16 Agustus 1945 adalah …",
+      "options": [
+        "Sekutu mendarat di Jakarta",
+        "Soekarno dan Hatta ditangkap tentara Jepang",
+        "Golongan tua menolak kemerdekaan",
+        "Golongan muda mendesak proklamasi segera tanpa menunggu PPKI bentukan Jepang",
+        "Jepang menolak menyerah kepada Sekutu"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Golongan muda membawa Soekarno–Hatta ke Rengasdengklok agar proklamasi dilakukan sendiri, bukan sebagai “hadiah” Jepang melalui PPKI."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Lagu Indonesia Raya pertama kali diperdengarkan di depan umum pada …",
+      "options": [
+        "Kongres Pemuda I tahun 1926",
+        "Kongres Pemuda II tahun 1928",
+        "Sidang BPUPKI tahun 1945",
+        "Proklamasi 17 Agustus 1945",
+        "Konferensi Meja Bundar tahun 1949"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "W.R. Supratman memperdengarkan Indonesia Raya dengan biola pada penutupan Kongres Pemuda II, 28 Oktober 1928."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Pertempuran besar di Surabaya pada 10 November 1945 kini diperingati sebagai …",
+      "options": [
+        "Hari Pahlawan",
+        "Hari Kebangkitan Nasional",
+        "Hari Sumpah Pemuda",
+        "Hari Kesaktian Pancasila",
+        "Hari Bela Negara"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "10 November ditetapkan sebagai Hari Pahlawan untuk mengenang perlawanan arek-arek Surabaya terhadap pasukan Sekutu."
+    },
+    {
+      "category": "TWK-NAS",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sikap nasionalisme yang paling tepat di media sosial adalah …",
+      "options": [
+        "Membagikan konten budaya Indonesia dan memeriksa kebenaran informasi sebelum membagikannya",
+        "Menghindari semua konten dari luar negeri",
+        "Membalas setiap kritik terhadap Indonesia dengan kata-kata kasar",
+        "Hanya mengikuti akun dari daerah sendiri",
+        "Menyebarkan berita yang membanggakan Indonesia tanpa mengecek sumbernya"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Nasionalisme digital berarti berkontribusi positif dan bertanggung jawab, termasuk tidak menyebarkan informasi yang belum diverifikasi."
+    },
+    {
+      "category": "TWK-INT",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sebagai anggota panitia pengadaan, Anda mendapati salah satu peserta adalah perusahaan milik adik Anda. Tindakan yang tepat adalah …",
+      "options": [
+        "Menunggu sampai ada yang mempersoalkan",
+        "Meminta adik Anda menarik penawarannya",
+        "Memberi nilai lebih rendah agar terlihat adil",
+        "Menyatakan adanya konflik kepentingan dan mundur dari penilaian peserta tersebut",
+        "Tetap menilai secara objektif tanpa memberi tahu siapa pun"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Konflik kepentingan wajib dinyatakan dan pejabat yang bersangkutan tidak ikut mengambil keputusan, meski merasa bisa objektif."
+    },
+    {
+      "category": "TWK-INT",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Pengertian integritas yang paling tepat adalah …",
+      "options": [
+        "Kepatuhan pada perintah atasan dalam segala hal",
+        "Keberanian menyampaikan pendapat",
+        "Kesesuaian antara ucapan, tindakan, dan nilai yang dianut, termasuk ketika tidak diawasi",
+        "Kesetiaan kepada kelompok kerja",
+        "Kemampuan menyelesaikan pekerjaan dengan cepat"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Integritas adalah konsistensi antara nilai, ucapan, dan perbuatan, tidak bergantung pada ada tidaknya pengawasan."
+    },
+    {
+      "category": "TWK-INT",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Lembaga negara independen yang dibentuk berdasarkan UU Nomor 30 Tahun 2002 untuk memberantas korupsi adalah …",
+      "options": [
+        "PPATK",
+        "Ombudsman RI",
+        "BPK",
+        "Komnas HAM",
+        "KPK"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Komisi Pemberantasan Korupsi dibentuk melalui UU 30/2002. BPK memeriksa keuangan negara, PPATK menganalisis transaksi keuangan."
+    },
+    {
+      "category": "TWK-INT",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Warga yang dirugikan karena penundaan layanan berlarut-larut oleh instansi pemerintah dapat melaporkan maladministrasi tersebut kepada …",
+      "options": [
+        "KPK",
+        "BPK",
+        "Ombudsman Republik Indonesia",
+        "Mahkamah Konstitusi",
+        "Komnas HAM"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Ombudsman RI berwenang mengawasi penyelenggaraan pelayanan publik dan menerima laporan maladministrasi (UU 37/2008)."
+    },
+    {
+      "category": "TWK-INT",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Anda mengetahui rekan kerja memanipulasi daftar hadir agar terlihat masuk tepat waktu. Sikap yang paling sesuai dengan integritas adalah …",
+      "options": [
+        "Diam karena bukan urusan Anda",
+        "Ikut melakukannya agar tidak dianggap berbeda",
+        "Melapor ke atasan tanpa bukti",
+        "Menyebarkan kejadian itu di grup kantor",
+        "Menegurnya, dan bila berlanjut melaporkan melalui saluran pengaduan resmi"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Menegur lebih dulu menjaga hubungan kerja, dan saluran pengaduan resmi (whistleblowing system) dipakai bila pelanggaran berlanjut."
+    },
+    {
+      "category": "TWK-BELA",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Dalam sistem pertahanan dan keamanan rakyat semesta, yang berkedudukan sebagai kekuatan pendukung adalah …",
+      "options": [
+        "Polri",
+        "rakyat",
+        "TNI",
+        "pemerintah daerah",
+        "TNI dan Polri"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Pasal 30 ayat (2) UUD 1945: TNI dan Polri sebagai kekuatan utama, rakyat sebagai kekuatan pendukung."
+    },
+    {
+      "category": "TWK-BELA",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Contoh bela negara nonfisik yang dapat dilakukan pelajar adalah …",
+      "options": [
+        "Mengikuti latihan militer",
+        "Membeli senjata untuk berjaga-jaga",
+        "Menolak semua budaya asing",
+        "Belajar dengan sungguh-sungguh dan menjaga kerukunan di lingkungannya",
+        "Menjaga perbatasan negara"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Bela negara nonfisik berupa peran sesuai profesi dan kemampuan, misalnya berprestasi dan menjaga persatuan."
+    },
+    {
+      "category": "TWK-BELA",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Berikut ini yang bukan merupakan nilai dasar bela negara adalah …",
+      "options": [
+        "Cinta tanah air",
+        "Setia pada Pancasila sebagai ideologi negara",
+        "Mengutamakan kepentingan golongan",
+        "Sadar berbangsa dan bernegara",
+        "Rela berkorban untuk bangsa dan negara"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Nilai dasar bela negara (UU 23/2019) meliputi cinta tanah air, sadar berbangsa dan bernegara, setia pada Pancasila, rela berkorban, dan kemampuan awal bela negara. Mengutamakan golongan justru bertentangan."
+    },
+    {
+      "category": "TWK-BELA",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Contoh ancaman nonmiliter terhadap ketahanan nasional adalah …",
+      "options": [
+        "Pemberontakan bersenjata",
+        "Peredaran narkoba secara masif",
+        "Pelanggaran wilayah udara oleh pesawat tempur asing",
+        "Blokade laut oleh armada asing",
+        "Agresi militer negara lain"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Ancaman nonmiliter tidak memakai kekuatan senjata, misalnya narkoba, hoaks yang memecah belah, dan kejahatan siber."
+    },
+    {
+      "category": "TWK-BELA",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Hak setiap warga negara atas pekerjaan dan penghidupan yang layak bagi kemanusiaan tercantum dalam …",
+      "options": [
+        "Pasal 27 ayat (1)",
+        "Pasal 31 ayat (1)",
+        "Pasal 27 ayat (2)",
+        "Pasal 28",
+        "Pasal 30 ayat (1)"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Pasal 27 ayat (2). Ayat (1) tentang persamaan kedudukan di dalam hukum dan pemerintahan."
+    },
+    {
+      "category": "TWK-BHS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Kalimat berikut yang efektif adalah …",
+      "options": [
+        "Para peserta-peserta diharap hadir tepat waktu.",
+        "Agar supaya lulus, ia belajar setiap hari.",
+        "Para hadirin sekalian dimohon berdiri.",
+        "Para peserta diharap hadir tepat waktu.",
+        "Ia naik ke atas panggung."
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Opsi lain mengandung pemborosan kata: “para peserta-peserta”, “para hadirin sekalian”, “agar supaya”, “naik ke atas”."
+    },
+    {
+      "category": "TWK-BHS",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Penulisan huruf kapital yang benar terdapat pada kalimat …",
+      "options": [
+        "kami berangkat ke Jawa Barat pada hari senin.",
+        "Kami berangkat ke Jawa Barat pada hari Senin.",
+        "Kami Berangkat ke Jawa barat pada hari Senin.",
+        "Kami berangkat ke Jawa Barat pada Hari Senin.",
+        "Kami berangkat ke jawa barat pada hari senin."
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Nama geografi dan nama hari ditulis kapital, tetapi kata “hari” tidak."
+    },
+    {
+      "category": "TWK-BHS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Kata serapan yang ditulis sesuai kaidah baku adalah …",
+      "options": [
+        "praktek",
+        "obyek",
+        "sistim",
+        "kwitansi",
+        "objek"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Bentuk baku: objek, sistem, praktik, kuitansi."
+    },
+    {
+      "category": "TWK-BHS",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Penggunaan tanda koma yang tepat terdapat pada kalimat …",
+      "options": [
+        "Ibu membeli beras gula, dan minyak.",
+        "Ibu membeli, beras, gula, dan minyak.",
+        "Ibu membeli beras, gula, dan minyak.",
+        "Ibu, membeli beras gula dan minyak.",
+        "Ibu membeli beras, gula dan, minyak."
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Koma memisahkan unsur dalam perincian, termasuk sebelum “dan” pada unsur terakhir."
+    },
+    {
+      "category": "TWK-BHS",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Penulisan kata depan dan awalan “di” yang benar terdapat pada kalimat …",
+      "options": [
+        "Buku itu di letakkan di atas meja.",
+        "Buku itu di letakkan diatas meja.",
+        "Buku itu diletakkan di atas meja.",
+        "Buku itu diletakan di atas meja.",
+        "Buku itu diletakkan diatas meja."
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Awalan di- ditulis serangkai dengan kata kerja (diletakkan), kata depan di ditulis terpisah dari kata tempat (di atas). “Diletakan” salah karena kata dasarnya “letak” + -kan."
+    }
+  ]
+}

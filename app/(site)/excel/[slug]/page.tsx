@@ -42,7 +42,7 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
         <div className="flex flex-col gap-2">
           <p className="eyebrow">Contoh</p>
           {l.examples.map((e) => (
-            <div key={e.f} className="card group flex flex-col gap-1 p-3 transition-colors hover:border-fg">
+            <div key={e.f} className="card lift group flex flex-col gap-1 p-3">
               <code className="font-mono text-[13px] break-all">{e.f}</code>
               <span className="text-[13px] text-muted">{e.note}</span>
             </div>

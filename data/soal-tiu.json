@@ -1,0 +1,949 @@
+{
+  "questions": [
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Jika 3x + 7 = 25, berapakah nilai 2x − 4?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "3x = 18 sehingga x = 6. Maka 2x − 4 = 12 − 4 = 8."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Harga sebuah buku setelah diskon 20% adalah Rp48.000. Berapa harga sebelum diskon?",
+      "options": [
+        "Rp56.000",
+        "Rp57.600",
+        "Rp58.000",
+        "Rp60.000",
+        "Rp62.000"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Harga setelah diskon = 80% × harga awal. Harga awal = 48.000 ÷ 0,8 = 60.000."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lanjutan deret 2, 6, 12, 20, 30, … adalah",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Selisihnya 4, 6, 8, 10, lalu 12. Jadi 30 + 12 = 42 (pola n × (n + 1))."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "A dapat menyelesaikan pekerjaan dalam 6 hari dan B dalam 3 hari. Jika bekerja bersama, pekerjaan selesai dalam … hari.",
+      "options": [
+        "1,5",
+        "2",
+        "2,5",
+        "3",
+        "4,5"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Per hari: 1/6 + 1/3 = 1/6 + 2/6 = 1/2 pekerjaan. Jadi selesai dalam 2 hari."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Nilai dari 15% × 240 + 0,25 × 64 adalah …",
+      "options": [
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "15% × 240 = 36 dan 0,25 × 64 = 16. Jumlahnya 52."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sinonim kata AMBIGU adalah …",
+      "options": [
+        "lugas",
+        "taksa",
+        "tegas",
+        "tunggal",
+        "rinci"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Ambigu berarti bermakna lebih dari satu; padanannya “taksa”. Lugas dan tegas justru berlawanan maknanya."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Antonim kata SPORADIS adalah …",
+      "options": [
+        "jarang",
+        "tersebar",
+        "kerap",
+        "acak",
+        "langka"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Sporadis berarti terjadi sesekali atau tidak tentu. Lawannya “kerap” (sering)."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 1,
+      "body": "DOKTER : STETOSKOP = FOTOGRAFER : …",
+      "options": [
+        "foto",
+        "studio",
+        "kamera",
+        "model",
+        "album"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Hubungannya profesi dan alat kerja utamanya. Alat kerja fotografer adalah kamera; foto adalah hasilnya."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Semua pegawai yang lulus pelatihan mendapat sertifikat. Sebagian pegawai unit A tidak mendapat sertifikat. Simpulan yang tepat adalah …",
+      "options": [
+        "Semua pegawai unit A tidak lulus pelatihan",
+        "Sebagian pegawai unit A tidak lulus pelatihan",
+        "Semua pegawai unit A lulus pelatihan",
+        "Sebagian pegawai unit A lulus tetapi tidak bersertifikat",
+        "Tidak dapat ditarik simpulan"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Lulus → bersertifikat. Yang tidak bersertifikat pasti tidak lulus (modus tollens). Karena hanya sebagian yang tidak bersertifikat, simpulannya “sebagian tidak lulus”."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Jika hari hujan, jalan basah. Hari ini jalan tidak basah. Simpulan yang tepat adalah …",
+      "options": [
+        "Hari hujan",
+        "Hari tidak hujan",
+        "Jalan licin",
+        "Hari mungkin hujan",
+        "Tidak dapat disimpulkan"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "p → q, ~q, maka ~p (modus tollens). Jalan tidak basah berarti hari tidak hujan."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Andi lebih tinggi dari Budi. Citra lebih pendek dari Budi. Dewi lebih tinggi dari Andi. Siapa yang paling pendek?",
+      "options": [
+        "Andi",
+        "Budi",
+        "Citra",
+        "Dewi",
+        "Tidak dapat ditentukan"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Urutan dari tertinggi: Dewi > Andi > Budi > Citra. Yang paling pendek adalah Citra."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Nilai dari 25% × 360 + 1/3 × 150 adalah …",
+      "options": [
+        "130",
+        "135",
+        "140",
+        "145",
+        "150"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "25% × 360 = 90 dan 1/3 × 150 = 50. Jumlahnya 140."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Rata-rata lima bilangan adalah 18. Jika salah satu bilangan, yaitu 26, dihapus, rata-rata empat bilangan sisanya adalah …",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Jumlah lima bilangan = 5 × 18 = 90. Setelah 26 dihapus: 64 ÷ 4 = 16."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Sebuah mobil melaju dengan kecepatan rata-rata 60 km/jam selama 2,5 jam. Jarak yang ditempuh adalah …",
+      "options": [
+        "120 km",
+        "140 km",
+        "150 km",
+        "160 km",
+        "175 km"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Jarak = kecepatan × waktu = 60 × 2,5 = 150 km."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lanjutan deret 3, 7, 15, 31, 63, … adalah",
+      "options": [
+        "95",
+        "111",
+        "125",
+        "127",
+        "131"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Setiap suku = suku sebelumnya × 2 + 1. Maka 63 × 2 + 1 = 127."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Lanjutan deret 81, 27, 9, 3, … adalah",
+      "options": [
+        "0",
+        "1",
+        "1/3",
+        "2",
+        "3"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Setiap suku dibagi 3. Maka 3 ÷ 3 = 1."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lanjutan deret huruf A, C, F, J, O, … adalah",
+      "options": [
+        "S",
+        "T",
+        "U",
+        "V",
+        "W"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Urutan huruf: 1, 3, 6, 10, 15 (selisih 2, 3, 4, 5). Selisih berikutnya 6, jadi 21 = U."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Uang Rp240.000 dibagi kepada A dan B dengan perbandingan 3 : 5. Bagian B adalah …",
+      "options": [
+        "Rp90.000",
+        "Rp120.000",
+        "Rp144.000",
+        "Rp150.000",
+        "Rp160.000"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Bagian B = 5/8 × 240.000 = 150.000."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sebuah barang dijual Rp132.000 dengan keuntungan 10%. Harga belinya adalah …",
+      "options": [
+        "Rp118.800",
+        "Rp119.000",
+        "Rp120.000",
+        "Rp121.000",
+        "Rp122.000"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Harga jual = 110% × harga beli. Harga beli = 132.000 ÷ 1,1 = 120.000."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sebuah pekerjaan selesai dalam 12 hari oleh 7 pekerja. Jika dikerjakan 12 pekerja dengan kemampuan sama, pekerjaan selesai dalam … hari.",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Perbandingan berbalik nilai: 7 × 12 = 84 hari-orang. 84 ÷ 12 = 7 hari."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Nilai dari √144 + 3³ adalah …",
+      "options": [
+        "36",
+        "37",
+        "39",
+        "41",
+        "45"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "√144 = 12 dan 3³ = 27. Jumlahnya 39."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Jika a = 4 dan b = −2, nilai a² − 3ab + b² adalah …",
+      "options": [
+        "12",
+        "28",
+        "36",
+        "44",
+        "52"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "16 − 3(4)(−2) + 4 = 16 + 24 + 4 = 44."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Pecahan terbesar di antara pilihan berikut adalah …",
+      "options": [
+        "3/4",
+        "5/7",
+        "7/9",
+        "2/3",
+        "4/5"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Dalam desimal: 0,75; 0,714; 0,778; 0,667; 0,8. Yang terbesar 4/5."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sebuah kelas berisi 40 siswa, 60% di antaranya perempuan. Jika 25% siswa perempuan memakai kacamata, banyak siswa perempuan berkacamata adalah …",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Perempuan = 60% × 40 = 24. Berkacamata = 25% × 24 = 6."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 3,
+      "body": "Modal Rp5.000.000 disimpan dengan bunga tunggal 6% per tahun. Besar bunga setelah 18 bulan adalah …",
+      "options": [
+        "Rp300.000",
+        "Rp400.000",
+        "Rp450.000",
+        "Rp500.000",
+        "Rp540.000"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Bunga = 5.000.000 × 6% × 1,5 tahun = 450.000."
+    },
+    {
+      "category": "TIU-NUM",
+      "type": "single",
+      "difficulty": 3,
+      "body": "Umur ayah sekarang tiga kali umur anaknya. Sepuluh tahun lagi, umur ayah dua kali umur anaknya. Umur anak sekarang adalah … tahun.",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15",
+        "20"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Misal umur anak x: 3x + 10 = 2(x + 10), sehingga x = 10."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Sinonim kata KONKLUSI adalah …",
+      "options": [
+        "pendahuluan",
+        "ringkasan",
+        "simpulan",
+        "gagasan",
+        "pendapat"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Konklusi berarti kesimpulan atau simpulan."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sinonim kata NIRLABA adalah …",
+      "options": [
+        "tanpa batas",
+        "merugi",
+        "tanpa bunga",
+        "tidak mencari keuntungan",
+        "bebas pajak"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Nir- berarti tidak/tanpa; nirlaba = tidak bertujuan mencari laba."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Antonim kata PROGRESIF adalah …",
+      "options": [
+        "maju",
+        "agresif",
+        "represif",
+        "regresif",
+        "pasif"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Progresif = ke arah kemajuan; regresif = mundur."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Antonim kata EKSPLISIT adalah …",
+      "options": [
+        "rinci",
+        "terbuka",
+        "implisit",
+        "tersurat",
+        "jelas"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Eksplisit = gamblang/tersurat; lawannya implisit = tersirat."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 1,
+      "body": "API : PANAS = ES : …",
+      "options": [
+        "air",
+        "cair",
+        "beku",
+        "dingin",
+        "kutub"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Benda dan sifat suhu yang ditimbulkannya: api terasa panas, es terasa dingin."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 1,
+      "body": "PETANI : SAWAH = NELAYAN : …",
+      "options": [
+        "pasar",
+        "laut",
+        "ikan",
+        "jala",
+        "perahu"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Hubungan profesi dan tempat bekerja. Perahu dan jala adalah alat, ikan adalah hasil."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "BENIH : POHON = TELUR : …",
+      "options": [
+        "induk",
+        "kuning",
+        "cangkang",
+        "sarang",
+        "ayam"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Tahap awal dan bentuk dewasanya: benih tumbuh menjadi pohon, telur menetas menjadi ayam."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 1,
+      "body": "JAM : WAKTU = TERMOMETER : …",
+      "options": [
+        "panas",
+        "demam",
+        "cuaca",
+        "raksa",
+        "suhu"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Alat ukur dan besaran yang diukurnya."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Kata yang tidak termasuk kelompoknya adalah …",
+      "options": [
+        "biola",
+        "gitar",
+        "selo",
+        "harpa",
+        "seruling"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Biola, gitar, harpa, dan selo adalah alat musik dawai; seruling alat musik tiup."
+    },
+    {
+      "category": "TIU-VER",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Sinonim kata LAZIM adalah …",
+      "options": [
+        "langka",
+        "baru",
+        "biasa",
+        "wajib",
+        "aneh"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Lazim berarti biasa atau umum."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Semua ASN wajib menaati kode etik. Rina adalah ASN. Simpulan yang tepat adalah …",
+      "options": [
+        "Rina mungkin menaati kode etik",
+        "Rina wajib menaati kode etik",
+        "Sebagian ASN tidak menaati kode etik",
+        "Rina bukan ASN",
+        "Tidak dapat disimpulkan"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Silogisme kategoris: semua A adalah B, Rina adalah A, maka Rina adalah B."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Semua burung bertelur. Sebagian hewan peliharaan adalah burung. Simpulan yang tepat adalah …",
+      "options": [
+        "Tidak ada hewan peliharaan yang bertelur",
+        "Sebagian burung bukan hewan peliharaan",
+        "Sebagian hewan peliharaan bertelur",
+        "Semua hewan peliharaan bertelur",
+        "Semua yang bertelur adalah burung"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Hewan peliharaan yang berupa burung pasti bertelur, sehingga sebagian hewan peliharaan bertelur."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Jika rajin belajar, maka lulus seleksi. Jika lulus seleksi, maka diangkat menjadi ASN. Simpulan yang sah adalah …",
+      "options": [
+        "Jika diangkat menjadi ASN, maka rajin belajar",
+        "Jika tidak rajin belajar, maka tidak diangkat menjadi ASN",
+        "Jika rajin belajar, maka diangkat menjadi ASN",
+        "Jika lulus seleksi, maka rajin belajar",
+        "Tidak dapat disimpulkan"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Silogisme hipotetis: p → q dan q → r, maka p → r."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Ingkaran dari pernyataan “Semua peserta hadir tepat waktu” adalah …",
+      "options": [
+        "Semua peserta terlambat",
+        "Semua peserta tidak hadir tepat waktu",
+        "Tidak ada peserta yang hadir tepat waktu",
+        "Ada peserta yang tidak hadir tepat waktu",
+        "Sebagian peserta hadir tepat waktu"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Ingkaran “semua … adalah …” adalah “ada/beberapa … yang tidak …”."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Kontraposisi dari “Jika hujan, maka saya membawa payung” adalah …",
+      "options": [
+        "Jika saya tidak membawa payung, maka tidak hujan",
+        "Hujan dan saya tidak membawa payung",
+        "Jika hujan, maka saya tidak membawa payung",
+        "Jika tidak hujan, maka saya tidak membawa payung",
+        "Jika saya membawa payung, maka hujan"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Kontraposisi p → q adalah ~q → ~p, dan nilainya setara dengan pernyataan awal."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 3,
+      "body": "P, Q, R, S, dan T duduk berjajar menghadap depan. P duduk di ujung kiri, T tepat di sebelah kanan P, S di ujung kanan, dan R tidak duduk di sebelah S. Siapa yang duduk di tengah?",
+      "options": [
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Kursi 1 = P, 2 = T, 5 = S. R tidak boleh di kursi 4 (sebelah S), jadi R di kursi 3 dan Q di kursi 4."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Jika hari ini Rabu, maka 100 hari lagi adalah hari …",
+      "options": [
+        "Sabtu",
+        "Minggu",
+        "Senin",
+        "Jumat",
+        "Kamis"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "100 = 14 × 7 + 2. Dua hari setelah Rabu adalah Jumat."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Sebagian pegawai bekerja dari rumah. Semua yang bekerja dari rumah memakai VPN. Simpulan yang tepat adalah …",
+      "options": [
+        "Semua yang memakai VPN bekerja dari rumah",
+        "Semua pegawai memakai VPN",
+        "Sebagian pegawai tidak bekerja",
+        "Tidak ada pegawai yang memakai VPN",
+        "Sebagian pegawai memakai VPN"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Pegawai yang bekerja dari rumah pasti memakai VPN, jadi sebagian pegawai memakai VPN."
+    },
+    {
+      "category": "TIU-LOG",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Dalam lomba lari, Dina finis sebelum Eko, Eko finis sebelum Gita, dan Fani finis setelah Gita. Siapa yang finis pertama?",
+      "options": [
+        "Dina",
+        "Eko",
+        "Fani",
+        "Gita",
+        "Tidak dapat ditentukan"
+      ],
+      "scores": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Urutan: Dina, Eko, Gita, Fani."
+    }
+  ]
+}

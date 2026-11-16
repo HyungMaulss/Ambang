@@ -2,7 +2,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Token dari Figma "Ambang — UI Responsif" (light/*, dark/*, brand/*) */
+/* Token: Figma "Ambang — UI Responsif" + Sistem logo v1 (Void, Paper, Signal, Line) */
 :root {
   --bg: #ece9e1;
   --surface: #f5f3ee;
@@ -19,7 +19,7 @@
   --surface: #0e0e0d;
   --fg: #ece9e1;
   --muted: #a19e96;
-  --line: #2b2a27;
+  --line: #2a2a2a;
   --danger: #ff8a7a;
   color-scheme: dark;
 }
@@ -30,7 +30,7 @@
   --surface: #0e0e0d;
   --fg: #ece9e1;
   --muted: #a19e96;
-  --line: #2b2a27;
+  --line: #2a2a2a;
   background-color: var(--bg);
   color: var(--fg);
 }
@@ -51,8 +51,8 @@
   --color-accent: var(--accent);
   --color-on-accent: var(--on-accent);
   --color-danger: var(--danger);
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-display: var(--font-space), var(--font-inter), sans-serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-jakarta), sans-serif;
 }
 
 html,
@@ -62,6 +62,9 @@ body {
 }
 body {
   font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.005em;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -69,6 +72,20 @@ body {
   background: var(--accent);
   color: var(--on-accent);
 }
+/* Bricolage Grotesque 600 untuk wordmark & judul; utilitas font-* tetap bisa menimpa */
+@layer base {
+  .font-display {
+    font-weight: 600;
+    font-optical-sizing: auto;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -76,8 +93,24 @@ body {
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center gap-3 rounded-[6px] py-[14px] pr-[18px] pl-[22px] text-[15px] leading-none font-medium whitespace-nowrap select-none;
+    @apply inline-flex items-center justify-center gap-3 rounded-none py-[14px] pr-[18px] pl-[22px] text-[15px] leading-none font-medium whitespace-nowrap select-none;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
     transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(105deg, transparent 35%, color-mix(in srgb, var(--accent) 35%, transparent) 50%, transparent 65%);
+    transform: translateX(-120%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+  }
+  .btn:hover:not(:disabled)::after {
+    transform: translateX(120%);
   }
   .btn:hover:not(:disabled) {
     transform: translateY(-2px);
@@ -109,7 +142,7 @@ body {
     @apply bg-accent text-on-accent;
   }
   .icon-btn {
-    @apply inline-flex size-11 items-center justify-center rounded-[6px] border border-line text-fg;
+    @apply inline-flex size-11 items-center justify-center rounded-none border border-line text-fg;
     transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
   }
   .icon-btn:hover {
@@ -119,16 +152,51 @@ body {
     transform: scale(0.94);
   }
   .tag {
-    @apply inline-flex items-center rounded-[4px] border border-line px-3 py-1.5 text-[13px] leading-none font-medium;
+    @apply inline-flex items-center rounded-none border border-line px-3 py-1.5 text-[13px] leading-none font-medium;
   }
   .eyebrow {
     @apply text-[12px] font-medium tracking-[0.06em] text-muted uppercase;
   }
   .card {
-    @apply rounded-[8px] border border-line bg-surface;
+    @apply rounded-none border border-line bg-surface;
+  }
+  /* kartu interaktif: naik sedikit + garis aksen tumbuh dari kiri */
+  .lift {
+    position: relative;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .lift::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    height: 3px;
+    width: calc(100% + 2px);
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+  .lift:hover {
+    transform: translateY(-3px);
+    border-color: var(--fg);
+    box-shadow: 0 14px 30px -18px color-mix(in srgb, var(--fg) 45%, transparent);
+  }
+  .lift:hover::before,
+  .lift:focus-within::before {
+    transform: scaleX(1);
+  }
+  /* tautan teks: garis bawah meluncur */
+  .link {
+    background: linear-gradient(currentColor, currentColor) left bottom / 0 1px no-repeat;
+    transition: background-size 0.3s ease, color 0.2s ease;
+  }
+  .link:hover,
+  .link:focus-visible {
+    background-size: 100% 1px;
   }
   .field {
-    @apply w-full rounded-[6px] border border-line bg-bg px-3 py-2.5 text-[15px] text-fg;
+    @apply w-full rounded-none border border-line bg-bg px-3 py-2.5 text-[15px] text-fg;
     transition: border-color 0.2s ease;
   }
   .field:hover,
@@ -213,6 +281,40 @@ body {
 }
 .tooltip {
   animation: tip-in 0.15s ease;
+}
+
+/* Logo: batang tumbuh saat muat, memantul bergantian saat hover */
+.logo-mark .mark-bar {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.logo-mark .mark-bar:nth-child(2) { animation-delay: 0.08s; }
+.logo-mark .mark-bar:nth-child(3) { animation-delay: 0.16s; }
+.logo-mark .mark-line {
+  transform-box: fill-box;
+  transform-origin: left;
+  animation: draw-x 0.6s ease 0.35s both;
+}
+@keyframes bob {
+  0%, 100% { transform: scaleY(1); }
+  45% { transform: scaleY(1.12); }
+}
+.group:hover .logo-mark .mark-bar {
+  animation: bob 0.5s ease both;
+}
+.group:hover .logo-mark .mark-bar:nth-child(2) { animation-delay: 0.07s; }
+.group:hover .logo-mark .mark-bar:nth-child(3) { animation-delay: 0.14s; }
+
+/* Transisi halaman (app/(site)/template.tsx) */
+.page-in {
+  animation: fade-up 0.45s ease both;
+}
+
+/* Indikator gulir di atas halaman */
+.scroll-bar {
+  transform-origin: left;
+  transform: scaleX(var(--p, 0));
 }
 
 /* Reveal saat elemen masuk viewport (lihat components/reveal.tsx) */

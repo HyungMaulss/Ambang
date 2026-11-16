@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
+// Sistem logo v1: Bricolage Grotesque untuk wordmark & judul, Plus Jakarta Sans untuk teks antarmuka.
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
 
 export const metadata: Metadata = {
   title: { default: "Ambang — Latihan SKD & Excel", template: "%s · Ambang" },
@@ -20,7 +21,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" suppressHydrationWarning className={`${inter.variable} ${space.variable}`}>
+    <html lang="id" suppressHydrationWarning className={`${bricolage.variable} ${jakarta.variable}`}>
       <body className="min-h-dvh">
         <Providers>{children}</Providers>
       </body>

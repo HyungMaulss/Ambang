@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { useEffect, useRef, useState } from "react";
-import { supabase, useUser } from "@/lib/supabase";
+import { supabase, useRole, useUser } from "@/lib/supabase";
 import { Icon, Logo, Tip } from "./ui";
 
 export const NAV = [
@@ -61,6 +61,8 @@ export function Header() {
   const path = usePathname();
   const menu = useRef<HTMLDialogElement>(null);
   useEffect(() => menu.current?.close(), [path]);
+  const role = useRole(useUser());
+  const links = role === "superadmin" ? [...NAV, { href: "/admin", label: "Admin" }] : NAV;
 
   return (
     <header className="relative z-20 mx-auto flex w-full max-w-[1440px] items-center justify-between px-5 py-4 md:px-10 md:py-7 xl:px-20">
@@ -68,13 +70,13 @@ export function Header() {
         <Logo />
       </Link>
 
-      <nav aria-label="Utama" className="hidden gap-0.5 rounded-[8px] border border-line bg-surface p-[5px] lg:flex">
-        {NAV.map((n) => (
+      <nav aria-label="Utama" className="hidden gap-0.5 rounded-none border border-line bg-surface p-[5px] lg:flex">
+        {links.map((n) => (
           <Link
             key={n.href}
             href={n.href}
             aria-current={isActive(path, n.href) ? "page" : undefined}
-            className={`rounded-[5px] px-4 py-[9px] text-[14px] font-medium transition-colors duration-200 ${
+            className={`rounded-none px-4 py-[9px] text-[14px] font-medium transition-colors duration-200 ${
               isActive(path, n.href) ? "bg-fg text-bg" : "text-muted hover:bg-bg hover:text-fg"
             }`}
           >
@@ -109,7 +111,7 @@ export function Header() {
           </button>
         </div>
         <nav aria-label="Utama (mobile)" className="mt-8 flex flex-col">
-          {[...NAV, { href: "/unggah", label: "Unggah soal" }].map((n, i) => (
+          {[...links, { href: "/unggah", label: "Unggah soal" }].map((n, i) => (
             <Link
               key={n.href}
               href={n.href}

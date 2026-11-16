@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { CountUp } from "@/components/count-up";
 import { AiPanel, ExplainButton, ReportButton } from "@/components/explain";
 import { ThemeToggle } from "@/components/header";
 import { reviewState } from "@/components/practice";
@@ -150,7 +151,7 @@ export default function TryoutPage() {
             <h1 className="mt-3 font-display text-[40px] leading-[1.05] tracking-[-0.03em] md:text-[56px]">{config?.name ?? "Tryout SKD"}</h1>
           </div>
           {config ? (
-            <div className="anim-fade-up grid grid-cols-3 overflow-hidden rounded-[6px] border border-line" style={{ animationDelay: "80ms" }}>
+            <div className="anim-fade-up grid grid-cols-3 overflow-hidden rounded-none border border-line" style={{ animationDelay: "80ms" }}>
               {config.per_category_count.map((p, i) => (
                 <div key={p.category} className={`flex flex-col gap-0.5 px-4 py-3.5 md:px-5 ${i ? "border-l border-line" : ""}`}>
                   <span className="text-[12px] font-medium tracking-[0.06em] text-muted">{p.category}</span>
@@ -170,7 +171,7 @@ export default function TryoutPage() {
           </ul>
           {DEMO && (
             <p className="card px-4 py-3 text-[14px] text-muted">
-              <strong className="text-fg">Mode demo:</strong> bank soal contoh hanya berisi sedikit soal, jadi tryout memakai semua yang tersedia, bukan 110.
+              <strong className="text-fg">Mode demo:</strong> soal diambil acak dari bank soal contoh orisinal di perangkat ini; riwayat tersimpan di browser.
             </p>
           )}
           {needLogin ? (
@@ -196,8 +197,10 @@ export default function TryoutPage() {
         <div className="mx-auto flex max-w-[860px] flex-col gap-8 px-5 py-10 md:py-16">
           <div className="anim-fade-up">
             <p className="eyebrow">Hasil tryout</p>
-            <h1 className="mt-3 font-display text-[56px] leading-none tracking-[-0.04em] md:text-[84px]">{b.total}</h1>
-            <p className={`mt-4 inline-block rounded-[6px] px-3 py-1.5 text-[15px] font-medium ${b.passed ? "bg-accent text-on-accent" : "border border-line"}`}>
+            <h1 className="mt-3 font-display text-[56px] leading-none tracking-[-0.04em] md:text-[84px]">
+              <CountUp value={b.total} duration={1200} />
+            </h1>
+            <p className={`mt-4 inline-block rounded-none px-3 py-1.5 text-[15px] font-medium ${b.passed ? "bg-accent text-on-accent" : "border border-line"}`}>
               {b.passed ? "Lewat ambang batas di semua subtes" : "Belum lewat ambang batas di semua subtes"}
             </p>
           </div>
@@ -228,9 +231,6 @@ export default function TryoutPage() {
               );
             })}
           </div>
-          {DEMO && (
-            <p className="text-[13px] text-muted">Mode demo: skor maksimum mengikuti jumlah soal contoh, jadi ambang batas resmi belum sebanding.</p>
-          )}
           <div className="flex flex-col gap-2.5 sm:flex-row">
             <button type="button" onClick={() => (setPhase("review"), go(0))} className="btn btn-primary justify-between">
               Tinjau jawaban <Icon.Arrow />
@@ -259,7 +259,7 @@ export default function TryoutPage() {
     <div
       role="timer"
       aria-label={`Sisa waktu ${fmt(left)}`}
-      className={`flex items-center gap-2.5 rounded-[6px] bg-accent px-3 py-2 text-on-accent md:px-3.5 ${low ? "anim-blink" : ""}`}
+      className={`flex items-center gap-2.5 rounded-none bg-accent px-3 py-2 text-on-accent md:px-3.5 ${low ? "anim-blink" : ""}`}
     >
       <span className="hidden text-[12px] font-medium tracking-[0.04em] uppercase md:inline">Sisa waktu</span>
       <span className="font-display text-[19px] font-medium tracking-[-0.02em] tabular-nums md:text-[22px]">{fmt(left)}</span>
@@ -297,7 +297,7 @@ export default function TryoutPage() {
           </span>
         </div>
         <div className="flex items-center gap-3">
-          {phase === "exam" ? timer : <span className="rounded-[6px] bg-accent px-3 py-2 font-display text-[19px] font-medium text-on-accent">{result?.breakdown.total}</span>}
+          {phase === "exam" ? timer : <span className="rounded-none bg-accent px-3 py-2 font-display text-[19px] font-medium text-on-accent">{result?.breakdown.total}</span>}
           <span className="hidden md:inline-flex">
             {phase === "exam" ? (
               <button type="button" className="btn btn-secondary" onClick={() => confirmRef.current?.showModal()} disabled={busy}>
@@ -369,7 +369,7 @@ export default function TryoutPage() {
             </button>
             {phase === "exam" && (
               <button type="button" aria-pressed={flagged} onClick={flag} className="btn btn-secondary py-3.5 pr-[18px] pl-4">
-                <span className={`size-3.5 rounded-[2px] border-[1.5px] border-accent transition-colors ${flagged ? "bg-accent" : ""}`} />
+                <span className={`size-3.5 rounded-none border-[1.5px] border-accent transition-colors ${flagged ? "bg-accent" : ""}`} />
                 Ragu-ragu
               </button>
             )}
@@ -394,7 +394,7 @@ export default function TryoutPage() {
         </button>
         {phase === "exam" && (
           <button type="button" aria-label={flagged ? "Hapus tanda ragu-ragu" : "Tandai ragu-ragu"} aria-pressed={flagged} className="icon-btn size-12" onClick={flag}>
-            <span className={`size-4 rounded-[2px] border-[1.5px] border-accent transition-colors ${flagged ? "bg-accent" : ""}`} />
+            <span className={`size-4 rounded-none border-[1.5px] border-accent transition-colors ${flagged ? "bg-accent" : ""}`} />
           </button>
         )}
         <div className="flex-1">
@@ -403,7 +403,7 @@ export default function TryoutPage() {
       </nav>
 
       {/* Daftar soal (mobile) */}
-      <dialog ref={listRef} aria-label="Daftar soal" className="m-auto mb-0 w-full max-w-none rounded-t-[12px] border border-line bg-bg p-5 text-fg" onClick={(e) => e.target === listRef.current && listRef.current?.close()}>
+      <dialog ref={listRef} aria-label="Daftar soal" className="m-auto mb-0 w-full max-w-none rounded-none border border-line bg-bg p-5 text-fg" onClick={(e) => e.target === listRef.current && listRef.current?.close()}>
         <div className="mb-4 flex justify-end">
           <button type="button" aria-label="Tutup" className="icon-btn" onClick={() => listRef.current?.close()}>
             <Icon.Close />
@@ -418,7 +418,7 @@ export default function TryoutPage() {
       </dialog>
 
       {/* Konfirmasi kumpulkan */}
-      <dialog ref={confirmRef} aria-label="Kumpulkan tryout" className="m-auto w-[min(440px,calc(100vw-32px))] rounded-[8px] border border-line bg-bg p-6 text-fg">
+      <dialog ref={confirmRef} aria-label="Kumpulkan tryout" className="m-auto w-[min(440px,calc(100vw-32px))] rounded-none border border-line bg-bg p-6 text-fg">
         <h2 className="font-display text-[26px] tracking-[-0.02em]">Kumpulkan sekarang?</h2>
         <p className="mt-3 text-[15px] leading-[1.55] text-muted">
           {counts.unanswered ? `${counts.unanswered} soal belum dijawab dan akan bernilai 0. ` : "Semua soal sudah dijawab. "}
@@ -466,7 +466,7 @@ function QuestionPanel({
   return (
     <>
       <h2 className="font-display text-[20px] tracking-[-0.02em]">Daftar soal</h2>
-      <div className="flex rounded-[6px] border border-line p-1" role="tablist" aria-label="Subtes">
+      <div className="flex rounded-none border border-line p-1" role="tablist" aria-label="Subtes">
         {groups.map((g) => (
           <button
             key={g}
@@ -474,7 +474,7 @@ function QuestionPanel({
             type="button"
             aria-selected={view === g}
             onClick={() => setView(g)}
-            className={`flex-1 rounded-[4px] p-2 text-[13px] font-medium transition-colors duration-200 ${view === g ? "bg-fg text-bg" : "text-muted hover:text-fg"}`}
+            className={`flex-1 rounded-none p-2 text-[13px] font-medium transition-colors duration-200 ${view === g ? "bg-fg text-bg" : "text-muted hover:text-fg"}`}
           >
             {g}
           </button>
@@ -502,7 +502,7 @@ function QuestionPanel({
               onClick={() => onPick(i)}
               aria-label={`Soal ${i + 1}${answered ? ", terjawab" : ""}${flagged ? ", ragu-ragu" : ""}`}
               aria-current={current ? "step" : undefined}
-              className={`flex aspect-square items-center justify-center rounded-[4px] text-[13px] font-medium transition-transform duration-150 hover:scale-110 ${cls}`}
+              className={`flex aspect-square items-center justify-center rounded-none text-[13px] font-medium transition-transform duration-150 hover:scale-110 ${cls}`}
             >
               {i + 1}
             </button>
@@ -511,15 +511,15 @@ function QuestionPanel({
       </div>
       {result ? (
         <ul className="flex flex-col gap-2.5 text-[13px] text-muted">
-          <li className="flex items-center gap-2.5"><span className="size-4 rounded-[4px] bg-fg" /> Nilai penuh</li>
-          <li className="flex items-center gap-2.5"><span className="size-4 rounded-[4px] border border-line bg-surface" /> Kurang tepat</li>
-          <li className="flex items-center gap-2.5"><span className="size-4 rounded-[4px] border border-dashed border-line" /> Tidak dijawab</li>
+          <li className="flex items-center gap-2.5"><span className="size-4 rounded-none bg-fg" /> Nilai penuh</li>
+          <li className="flex items-center gap-2.5"><span className="size-4 rounded-none border border-line bg-surface" /> Kurang tepat</li>
+          <li className="flex items-center gap-2.5"><span className="size-4 rounded-none border border-dashed border-line" /> Tidak dijawab</li>
         </ul>
       ) : (
         <ul className="flex flex-col gap-2.5 text-[13px] text-muted">
-          <li className="flex items-center gap-2.5"><span className="size-4 rounded-[4px] bg-fg" /> Terjawab · {counts.answered}</li>
-          <li className="flex items-center gap-2.5"><span className="size-4 rounded-[4px] bg-accent" /> Ragu-ragu · {counts.flagged}</li>
-          <li className="flex items-center gap-2.5"><span className="size-4 rounded-[4px] border border-line" /> Belum · {counts.empty}</li>
+          <li className="flex items-center gap-2.5"><span className="size-4 rounded-none bg-fg" /> Terjawab · {counts.answered}</li>
+          <li className="flex items-center gap-2.5"><span className="size-4 rounded-none bg-accent" /> Ragu-ragu · {counts.flagged}</li>
+          <li className="flex items-center gap-2.5"><span className="size-4 rounded-none border border-line" /> Belum · {counts.empty}</li>
         </ul>
       )}
       <div className="hidden flex-1 md:block" />

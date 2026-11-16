@@ -1,23 +1,26 @@
 import * as Tooltip from "@radix-ui/react-tooltip";
 import type { ReactNode, SVGProps } from "react";
 
-/* Logo/Mark — geometri dari Figma (3:18): tiga batang melewati garis ambang. */
+/* Sistem logo v1: tiga batang (TWK, TIU, TKP) melewati garis ambang batas. Proporsi diukur dari lembar logo. */
 export function LogoMark({ size = 28, className = "" }: { size?: number; className?: string }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden className={className}>
-      <rect x="4" y="26" width="56" height="4" fill="var(--accent)" />
-      <rect x="10" y="18" width="10" height="40" fill="currentColor" />
-      <rect x="27" y="6" width="10" height="52" fill="currentColor" />
-      <rect x="44" y="12" width="10" height="46" fill="currentColor" />
+    <svg width={(size * 68) / 64} height={size} viewBox="0 0 68 64" aria-hidden className={`logo-mark ${className}`}>
+      <rect className="mark-bar" x="7" y="14" width="12" height="50" fill="currentColor" />
+      <rect className="mark-bar" x="28" y="0" width="12" height="64" fill="currentColor" />
+      <rect className="mark-bar" x="49" y="7" width="12" height="57" fill="currentColor" />
+      <rect className="mark-line" x="0" y="24" width="68" height="4.5" fill="var(--accent)" />
     </svg>
   );
 }
 
-export function Logo() {
+export function Logo({ tagline = false }: { tagline?: boolean }) {
   return (
-    <span className="group inline-flex items-center gap-2.5 text-fg">
-      <LogoMark className="transition-transform duration-300 group-hover:-translate-y-0.5" />
-      <span className="font-display text-[24px] font-medium tracking-[-0.04em]">ambang</span>
+    <span className="group inline-flex flex-col items-start gap-1 text-fg">
+      <span className="inline-flex items-center gap-2.5">
+        <LogoMark size={26} />
+        <span className="font-display text-[25px] leading-none font-semibold tracking-[-0.035em]">ambang</span>
+      </span>
+      {tagline && <span className="text-[12px] text-muted">Latihan SKD & Excel sampai lewat ambang batas</span>}
     </span>
   );
 }
@@ -97,7 +100,7 @@ export function Tip({ label, children, side = "top" }: { label: ReactNode; child
         <Tooltip.Content
           side={side}
           sideOffset={8}
-          className="tooltip z-50 max-w-[300px] rounded-[4px] bg-fg px-3 py-2 text-[12px] leading-snug font-medium text-bg"
+          className="tooltip z-50 max-w-[300px] rounded-none bg-fg px-3 py-2 text-[12px] leading-snug font-medium text-bg"
         >
           {label}
         </Tooltip.Content>
@@ -151,14 +154,14 @@ export function OptionButton({
       onClick={onClick}
       disabled={disabled}
       aria-pressed={state === "selected"}
-      className={`group flex w-full items-center gap-4 rounded-[6px] border py-3 pr-5 pl-3.5 text-left transition-all duration-200 disabled:cursor-default ${box}`}
+      className={`group flex w-full items-center gap-4 rounded-none border py-3 pr-5 pl-3.5 text-left transition-all duration-200 disabled:cursor-default ${box}`}
     >
-      <span className={`flex size-8 shrink-0 items-center justify-center rounded-[4px] border font-display text-[14px] font-medium no-underline transition-colors ${key}`}>
+      <span className={`flex size-8 shrink-0 items-center justify-center rounded-none border font-display text-[14px] font-medium no-underline transition-[color,background-color,transform] duration-200 group-enabled:group-hover:scale-110 ${key}`}>
         {label}
       </span>
       <span className="flex-1 text-[16px]">{body}</span>
       {score !== undefined && (
-        <span className="rounded-[4px] border border-current/30 px-2 py-0.5 text-[12px] font-medium no-underline opacity-80">+{score}</span>
+        <span className="rounded-none border border-current/30 px-2 py-0.5 text-[12px] font-medium no-underline opacity-80">+{score}</span>
       )}
     </button>
   );

@@ -8,10 +8,14 @@ create extension if not exists pgcrypto;
 create table if not exists profiles (
   id uuid primary key references auth.users on delete cascade,
   name text,
-  role text not null default 'user' check (role in ('admin', 'user')),
+  role text not null default 'user',
   ai_quota_used int not null default 0,
   ai_quota_date date
 );
+
+-- superadmin: membuat akun pengguna & melihat riwayat skor semua orang; admin: moderasi soal.
+alter table profiles drop constraint if exists profiles_role_check;
+alter table profiles add constraint profiles_role_check check (role in ('superadmin', 'admin', 'user'));
 
 create table if not exists categories (
   id text primary key,                 -- kode: TWK, TIU-NUM, …
@@ -104,7 +108,7 @@ create table if not exists reports (
 -- ---------- Helper ----------
 create or replace function is_admin() returns boolean
 language sql stable security definer set search_path = public as $$
-  select exists (select 1 from profiles where id = auth.uid() and role = 'admin');
+  select exists (select 1 from profiles where id = auth.uid() and role in ('admin', 'superadmin'));
 $$;
 
 create or replace function handle_new_user() returns trigger
@@ -358,4 +362,5 @@ insert into exam_configs (id, name, year, per_category_count, duration_min, pass
    '{"TWK":65,"TIU":80,"TKP":166}')
 on conflict (id) do nothing;
 -- Kategori & soal contoh: jalankan `npm run import-soal -- data/soal-contoh.json` (lihat README).
--- Jadikan diri Anda admin: update profiles set role = 'admin' where id = '<uuid akun Anda>';
+-- Buat superadmin pertama: npm run create-superadmin -- email@anda.com "SandiKuat123" "Nama Anda"
+-- (atau: update profiles set role = 'superadmin' where id = '<uuid akun Anda>';)

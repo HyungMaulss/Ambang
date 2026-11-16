@@ -30,7 +30,19 @@ const LABELS = "ABCDE";
 const catById = new Map(seed.categories.map((c) => [c.id, c]));
 const groupOf = (id: string) => catById.get(id)?.parent_id ?? id;
 
-const DEMO_QUESTIONS: Question[] = seed.questions.map((q, i) => ({
+type SeedQuestion = { category: string; type: string; body: string; options: string[]; scores: number[]; explanation: string };
+
+// Soal demo dimuat terpisah (dynamic import) agar tidak membebani bundel saat memakai Supabase.
+let demoCache: Promise<Question[]> | null = null;
+const demoQuestions = () =>
+  (demoCache ??= Promise.all([
+    import("@/data/soal-twk.json"),
+    import("@/data/soal-tiu.json"),
+    import("@/data/soal-tkp.json"),
+    import("@/data/soal-psi.json"),
+  ]).then((files) => files.flatMap((f) => f.default.questions as SeedQuestion[]).map(toQuestion)));
+
+const toQuestion = (q: SeedQuestion, i: number): Question => ({
   id: `demo-${i}`,
   category: q.category,
   group: groupOf(q.category),
@@ -39,7 +51,7 @@ const DEMO_QUESTIONS: Question[] = seed.questions.map((q, i) => ({
   body: q.body,
   explanation: q.explanation,
   options: q.options.map((body, j) => ({ id: `demo-${i}-${LABELS[j]}`, label: LABELS[j], body, score: q.scores[j] })),
-}));
+});
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -85,7 +97,7 @@ export async function getConfig(): Promise<ExamConfig> {
 /** category: kode induk (TWK), subkategori (TIU-NUM), atau "PRIBADI" untuk soal pribadi. */
 export async function practiceSet(category: string, limit: number): Promise<Question[]> {
   if (!supabase) {
-    return shuffle(DEMO_QUESTIONS.filter((q) => q.category === category || q.group === category)).slice(0, limit);
+    return shuffle((await demoQuestions()).filter((q) => q.category === category || q.group === category)).slice(0, limit);
   }
   return must(await supabase.rpc("practice_set", { p_category: category, p_limit: limit }));
 }
@@ -100,8 +112,9 @@ export async function checkAnswer(q: Question): Promise<{ scores: Record<string,
 
 export async function startTryout(config: ExamConfig): Promise<TryoutSession> {
   if (!supabase) {
+    const pool = await demoQuestions();
     const questions = config.per_category_count.flatMap(({ category, count }) =>
-      shuffle(DEMO_QUESTIONS.filter((q) => q.group === category)).slice(0, count),
+      shuffle(pool.filter((q) => q.group === category)).slice(0, count),
     );
     return { attemptId: `demo-${Date.now()}`, startedAt: new Date().toISOString(), durationMin: config.duration_min, questions };
   }
