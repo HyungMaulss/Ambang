@@ -142,7 +142,7 @@ export default function UnggahPage() {
             <PreviewCard key={i} n={i + 1} p={p} onChange={(fn) => update(i, fn)} onRemove={() => setItems((xs) => xs!.filter((_, j) => j !== i))} />
           ))}
 
-          <div className="card sticky bottom-3 flex flex-col gap-4 p-4 shadow-[0_8px_24px_-12px_rgb(0_0_0/0.35)] md:p-5">
+          <div className="card sticky bottom-3 flex flex-col gap-4 p-4 shadow-[0_8px_24px_-12px_rgb(30_42_47/0.22)] md:p-5">
             <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
               <button type="button" disabled={!valid.length} onClick={() => setPractice(valid.map(toQuestion))} className="btn btn-accent justify-between">
                 Latihan sekali pakai <Icon.Arrow />

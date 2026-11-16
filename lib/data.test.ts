@@ -44,3 +44,10 @@ test("Excel Lab: semua rumus solusi menghasilkan nilai, bukan error", () => {
     hf.destroy();
   }
 });
+
+test("katalog fungsi Excel Lab hanya berisi fungsi yang didukung mesin", async () => {
+  const { FUNCTION_NAMES } = await import("./excel-functions.ts");
+  const supported = new Set(HyperFormula.getRegisteredFunctionNames("enGB"));
+  const missing = FUNCTION_NAMES.filter((f) => !supported.has(f));
+  assert.deepEqual(missing, []);
+});

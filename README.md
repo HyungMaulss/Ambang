@@ -29,7 +29,8 @@ Tanpa `.env.local`, aplikasi berjalan dalam **mode demo**: 146 soal orisinal (`d
 - **Unggah Word/PDF** diproses penuh di browser (mammoth, pdf.js legacy). File tidak pernah dikirim. Yang tersimpan hanya teks soal, dan hanya jika pengguna memilih "Simpan ke akun".
 - **Materi Excel** (15 topik) statis di `lib/excel-lessons.ts` dan `lib/excel-lessons-2.ts`. Nilai harapan dihitung dari rumus solusi, bukan ditulis manual. Tabel `excel_lessons`/`excel_exercises` di BRD sengaja tidak dibuat.
 - **Peran**: `superadmin` membuat akun (email + kata sandi, langsung aktif) dan melihat riwayat skor semua pengguna di `/admin`, lewat route server `/api/admin/*` yang memeriksa peran dengan service role. `admin` dan `superadmin` sama-sama bisa memoderasi soal (draft → review → published) lewat Supabase Table Editor.
-- **Identitas**: Sistem logo v1. Wordmark & judul memakai Bricolage Grotesque 600, teks antarmuka Plus Jakarta Sans, sudut 0 px.
+- **Identitas**: Sistem logo v1 dengan nada warna diredam agar menenangkan (kertas batu #F3F0E8, tinta slate #1E2A2F, aksen madu #D4A049; mode gelap slate #141A1C). Wordmark & judul Bricolage Grotesque 600, teks Plus Jakarta Sans, sudut 0 px. Kontras teks ≥ 5:1.
+- **Excel Lab** meniru Excel: Kotak Nama + bilah rumus, klik/seret sel saat menulis rumus untuk menyisipkan alamat, mode Tunjuk dengan panah, sorotan warna referensi, saran fungsi + petunjuk argumen, isi otomatis (fill handle, Ctrl+D), salin/tempel dengan referensi relatif, urungkan/ulangi, bilah status Jumlah/Rata-rata/Hitung.
 
 ## Lisensi pihak ketiga
 

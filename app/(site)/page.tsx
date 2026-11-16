@@ -54,7 +54,7 @@ function ThresholdVisual() {
       <div className="anim-draw absolute inset-x-0 top-[47%] h-1 bg-accent md:h-1.5" />
       <span className="eyebrow absolute top-[calc(47%-22px)] left-3 text-[11px] md:left-0 md:text-[12px]">ambang batas</span>
       <div className="anim-float absolute right-0 bottom-[72px] hidden md:block">
-        <Tilt className="card w-[238px] p-[18px] shadow-[0_12px_32px_-16px_rgb(0_0_0/0.35)]">
+        <Tilt className="card w-[238px] p-[18px] shadow-[0_12px_32px_-16px_rgb(30_42_47/0.22)]">
           <p className="text-[12px] font-medium text-muted">Soal 12 · TIU Numerik</p>
           <p className="mt-3 text-[15px] leading-[1.4] font-medium">Jika 3x + 7 = 25, berapakah nilai 2x − 4?</p>
           <span className="mt-3 inline-block bg-accent px-2.5 py-[7px] text-[12px] font-medium text-on-accent">Jelaskan lebih dalam</span>
