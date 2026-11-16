@@ -11,7 +11,7 @@ export function Footer() {
               href="https://www.linkedin.com/in/tegarmaulana/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-fg underline underline-offset-2 transition-colors hover:text-accent"
+              className="font-medium text-fg underline underline-offset-2 transition-colors hover:text-accent-ink"
             >
               Tegar Maulana
             </a>

@@ -319,7 +319,7 @@ export default function TryoutPage() {
       <div className="flex flex-1">
         <main className="flex min-w-0 flex-1 flex-col gap-5 px-5 pt-6 pb-32 md:gap-7 md:px-16 md:pt-12 md:pb-10">
           <div className="flex items-center gap-3.5">
-            <span className="hidden font-display text-[14px] font-medium text-accent md:inline">
+            <span className="hidden font-display text-[14px] font-medium text-accent-ink md:inline">
               Soal {state.idx + 1} dari {session.questions.length}
             </span>
             <span className="tag text-muted">{q.categoryName}</span>
@@ -494,7 +494,7 @@ function QuestionPanel({
             cls = !answered ? "border border-dashed border-line text-muted" : got === Math.max(...Object.values(sc)) ? "bg-fg text-bg" : "bg-surface border border-line text-fg";
           } else if (flagged) cls = "bg-accent text-on-accent";
           else if (answered) cls = "bg-fg text-bg";
-          if (current) cls += answered || flagged ? " outline-2 outline-offset-2 outline-accent" : " !border-[1.5px] !border-accent !text-accent";
+          if (current) cls += answered || flagged ? " outline-2 outline-offset-2 outline-accent" : " !border-[1.5px] !border-accent !text-accent-ink";
           return (
             <button
               key={x.id}

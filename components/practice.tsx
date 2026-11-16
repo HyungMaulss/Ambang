@@ -89,7 +89,7 @@ export function PracticeSession({ questions, onExit, local = false }: { question
         <div className="h-full bg-accent transition-[width] duration-500" style={{ width: `${((idx + (res ? 1 : 0)) / questions.length) * 100}%` }} />
       </div>
       <div className="flex flex-wrap items-center gap-3.5">
-        <span className="font-display text-[14px] font-medium text-accent">
+        <span className="font-display text-[14px] font-medium text-accent-ink">
           Soal {idx + 1} dari {questions.length}
         </span>
         <span className="tag text-muted">{q.categoryName}</span>
