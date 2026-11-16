@@ -9,6 +9,8 @@ export default function MasukPage() {
   const user = useUser();
   const router = useRouter();
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [mode, setMode] = useState<"sandi" | "tautan">("sandi");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [msg, setMsg] = useState("");
 
@@ -49,19 +51,45 @@ export default function MasukPage() {
           onSubmit={async (e) => {
             e.preventDefault();
             setState("sending");
-            const { error } = await supabase!.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } });
+            const { error } =
+              mode === "sandi"
+                ? await supabase!.auth.signInWithPassword({ email, password })
+                : await supabase!.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } });
             if (error) {
               setState("error");
-              setMsg(error.message);
-            } else setState("sent");
+              setMsg(/invalid login/i.test(error.message) ? "Email atau kata sandi salah." : error.message);
+            } else setState(mode === "sandi" ? "idle" : "sent");
           }}
         >
+          <div className="mb-2 flex border border-line p-1" role="tablist" aria-label="Cara masuk">
+            {(["sandi", "tautan"] as const).map((m) => (
+              <button
+                key={m}
+                type="button"
+                role="tab"
+                aria-selected={mode === m}
+                onClick={() => (setMode(m), setState("idle"))}
+                className={`flex-1 px-3 py-2 text-[14px] font-medium transition-colors ${mode === m ? "bg-fg text-bg" : "text-muted hover:text-fg"}`}
+              >
+                {m === "sandi" ? "Kata sandi" : "Tautan email"}
+              </button>
+            ))}
+          </div>
           <label htmlFor="email" className="text-[14px] font-medium">
             Email
           </label>
           <input id="email" type="email" required autoComplete="email" className="field" placeholder="nama@email.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+          {mode === "sandi" && (
+            <>
+              <label htmlFor="password" className="text-[14px] font-medium">
+                Kata sandi
+              </label>
+              <input id="password" type="password" required minLength={8} autoComplete="current-password" className="field" value={password} onChange={(e) => setPassword(e.target.value)} />
+              <p className="text-[13px] text-muted">Akun dibuat oleh superadmin. Lupa kata sandi? Hubungi superadmin.</p>
+            </>
+          )}
           <button className="btn btn-primary justify-between" disabled={state === "sending"}>
-            {state === "sending" ? <Spinner /> : null} Kirim tautan masuk <Icon.Arrow />
+            {state === "sending" ? <Spinner /> : null} {mode === "sandi" ? "Masuk" : "Kirim tautan masuk"} <Icon.Arrow />
           </button>
           {state === "error" && <p className="text-[14px] text-danger">{msg}</p>}
         </form>

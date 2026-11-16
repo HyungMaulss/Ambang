@@ -79,8 +79,8 @@ export default function LatihanPage() {
               <div
                 key={p.id}
                 style={{ animationDelay: `${i * 60}ms` }}
-                className={`anim-fade-up flex flex-col gap-4 rounded-[8px] border p-5 transition-all duration-300 ${
-                  active ? "inverse border-transparent" : "border-line hover:-translate-y-1 hover:border-fg"
+                className={`anim-fade-up flex flex-col gap-4 rounded-none border p-5 transition-all duration-300 ${
+                  active ? "inverse border-transparent" : "lift border-line"
                 }`}
               >
                 <button type="button" onClick={() => setSel(p.id)} className="flex items-start justify-between gap-3 text-left" aria-pressed={sel === p.id}>
@@ -121,7 +121,7 @@ export default function LatihanPage() {
       <div className="flex flex-col gap-4 border-t border-line pt-6 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
           <span className="text-[14px] text-muted">Jumlah soal</span>
-          <div className="flex rounded-[6px] border border-line p-1" role="radiogroup" aria-label="Jumlah soal">
+          <div className="flex rounded-none border border-line p-1" role="radiogroup" aria-label="Jumlah soal">
             {COUNTS.map((n) => (
               <button
                 key={n}
@@ -129,7 +129,7 @@ export default function LatihanPage() {
                 role="radio"
                 aria-checked={count === n}
                 onClick={() => setCount(n)}
-                className={`min-w-12 rounded-[4px] px-3 py-2 text-[14px] font-medium transition-colors ${count === n ? "bg-fg text-bg" : "text-muted hover:text-fg"}`}
+                className={`min-w-12 rounded-none px-3 py-2 text-[14px] font-medium transition-colors ${count === n ? "bg-fg text-bg" : "text-muted hover:text-fg"}`}
               >
                 {n}
               </button>
@@ -137,7 +137,7 @@ export default function LatihanPage() {
           </div>
         </div>
         <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-          <Link href="/unggah" className="text-[14px] text-muted underline underline-offset-2 transition-colors hover:text-fg">
+          <Link href="/unggah" className="link text-[14px] text-muted hover:text-fg">
             Punya soal sendiri? Unggah Word/PDF
           </Link>
           <button type="button" onClick={start} disabled={loading || blocked || !cats.length} className="btn btn-primary justify-between">

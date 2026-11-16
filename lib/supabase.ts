@@ -20,3 +20,28 @@ export function useUser() {
   }, []);
   return user;
 }
+
+/** Peran dari tabel profiles: "superadmin" | "admin" | "user"; null bila belum login/memuat. */
+export function useRole(user: User | null | undefined) {
+  const [role, setRole] = useState<string | null>(null);
+  const id = user?.id;
+  useEffect(() => {
+    if (!supabase || !id) return setRole(null);
+    supabase
+      .from("profiles")
+      .select("role")
+      .eq("id", id)
+      .single()
+      .then(({ data }) => setRole(data?.role ?? "user"));
+  }, [id]);
+  return role;
+}
+
+/** fetch ke route server dengan token sesi Supabase. */
+export async function authedFetch(input: string, init: RequestInit = {}) {
+  const token = (await supabase?.auth.getSession())?.data.session?.access_token;
+  const res = await fetch(input, { ...init, headers: { "content-type": "application/json", ...(token ? { authorization: `Bearer ${token}` } : {}), ...init.headers } });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(body.error ?? `Gagal (${res.status})`);
+  return body;
+}

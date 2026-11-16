@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { CountUp } from "@/components/count-up";
 import { Reveal } from "@/components/reveal";
+import { Tilt } from "@/components/tilt";
 import { Icon, Term } from "@/components/ui";
 import { Modules } from "./modules";
 import config from "@/data/soal-contoh.json";
@@ -51,10 +53,12 @@ function ThresholdVisual() {
       </div>
       <div className="anim-draw absolute inset-x-0 top-[47%] h-1 bg-accent md:h-1.5" />
       <span className="eyebrow absolute top-[calc(47%-22px)] left-3 text-[11px] md:left-0 md:text-[12px]">ambang batas</span>
-      <div className="card anim-float absolute right-0 bottom-[72px] hidden w-[238px] p-[18px] shadow-[0_12px_32px_-16px_rgb(0_0_0/0.35)] md:block">
-        <p className="text-[12px] font-medium text-muted">Soal 12 · TIU Numerik</p>
-        <p className="mt-3 text-[15px] leading-[1.4] font-medium">Jika 3x + 7 = 25, berapakah nilai 2x − 4?</p>
-        <span className="mt-3 inline-block rounded-[4px] bg-accent px-2.5 py-[7px] text-[12px] font-medium text-on-accent">Jelaskan lebih dalam</span>
+      <div className="anim-float absolute right-0 bottom-[72px] hidden md:block">
+        <Tilt className="card w-[238px] p-[18px] shadow-[0_12px_32px_-16px_rgb(0_0_0/0.35)]">
+          <p className="text-[12px] font-medium text-muted">Soal 12 · TIU Numerik</p>
+          <p className="mt-3 text-[15px] leading-[1.4] font-medium">Jika 3x + 7 = 25, berapakah nilai 2x − 4?</p>
+          <span className="mt-3 inline-block bg-accent px-2.5 py-[7px] text-[12px] font-medium text-on-accent">Jelaskan lebih dalam</span>
+        </Tilt>
       </div>
     </div>
   );
@@ -85,7 +89,7 @@ export default function Beranda() {
               Latihan sampai
               <br />
               lewat{" "}
-              <span className="group inline-block rounded-[6px] bg-accent px-2 pb-1 text-on-accent transition-transform duration-300 hover:-rotate-2 md:px-3.5">
+              <span className="group inline-block rounded-none bg-accent px-2 pb-1 text-on-accent transition-transform duration-300 hover:-rotate-2 md:px-3.5">
                 ambang.
               </span>
             </h1>
@@ -164,7 +168,7 @@ export default function Beranda() {
     return (
       <div className="flex flex-col gap-3">
         <p className="eyebrow">Ambang batas formasi umum · acuan KepmenPANRB 321/2024</p>
-        <div className="grid grid-cols-3 overflow-hidden rounded-[6px] border border-line lg:inline-flex lg:w-auto lg:self-start">
+        <div className="grid grid-cols-3 overflow-hidden rounded-none border border-line lg:inline-flex lg:w-auto lg:self-start">
           {Object.entries(PG).map(([code, v], i) => (
             <div
               key={code}
@@ -173,7 +177,9 @@ export default function Beranda() {
               <span className="text-[12px] font-medium tracking-[0.06em] text-muted">
                 <Term tip={TERMS[code]}>{code}</Term>
               </span>
-              <span className="font-display text-[32px] tracking-[-0.03em]">{v}</span>
+              <span className="font-display text-[32px] tracking-[-0.03em]">
+                <CountUp value={v} />
+              </span>
             </div>
           ))}
         </div>

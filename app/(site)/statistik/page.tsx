@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { CountUp } from "@/components/count-up";
 import { Icon, Spinner, Tip } from "@/components/ui";
 import { DEMO, listAttempts, type Attempt } from "@/lib/bank";
 import { supabase, useUser } from "@/lib/supabase";
@@ -65,13 +66,15 @@ export default function StatistikPage() {
       {error && <p className="text-danger">{error}</p>}
 
       {latest && (
-        <section className="grid gap-px overflow-hidden rounded-[8px] border border-line bg-line md:grid-cols-3">
+        <section className="grid gap-px overflow-hidden rounded-none border border-line bg-line md:grid-cols-3">
           {latest.score_breakdown!.groups.map((g, i) => {
             const gap = (g.passing ?? 0) - g.score;
             return (
               <div key={g.code} className="anim-fade-up flex flex-col gap-1 bg-bg p-5 transition-colors hover:bg-surface" style={{ animationDelay: `${i * 80}ms` }}>
                 <span className="text-[12px] font-medium tracking-[0.06em] text-muted">{g.code} · tryout terakhir</span>
-                <span className="font-display text-[44px] leading-none tracking-[-0.03em]">{g.score}</span>
+                <span className="font-display text-[44px] leading-none tracking-[-0.03em]">
+                  <CountUp value={g.score} />
+                </span>
                 <span className={`text-[14px] ${gap > 0 ? "text-muted" : "font-medium"}`}>
                   {g.passing === undefined ? `dari ${g.max}` : gap > 0 ? `${gap} poin lagi ke ambang ${g.passing}` : `Lewat ambang ${g.passing}`}
                 </span>

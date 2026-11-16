@@ -45,7 +45,7 @@ export function Modules() {
         return (
           <div
             key={m.title}
-            className={`rounded-[8px] transition-colors duration-300 ${isOpen ? "inverse" : "rounded-none border-b border-line hover:bg-surface"}`}
+            className={`rounded-none transition-colors duration-300 ${isOpen ? "inverse" : "rounded-none border-b border-line hover:bg-surface"}`}
           >
             <button
               type="button"

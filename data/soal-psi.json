@@ -1,0 +1,277 @@
+{
+  "questions": [
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Manakah yang tidak termasuk kelompoknya: Merkurius, Venus, Bulan, Mars, Jupiter?",
+      "options": [
+        "Merkurius",
+        "Venus",
+        "Bulan",
+        "Mars",
+        "Jupiter"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Semua adalah planet kecuali Bulan, yang merupakan satelit Bumi."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lanjutan deret 5, 10, 9, 18, 17, … adalah",
+      "options": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Polanya ×2 lalu −1 bergantian: 5→10→9→18→17→34."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Manakah yang tidak termasuk kelompoknya: meja, kursi, lemari, sofa, piring?",
+      "options": [
+        "kursi",
+        "sofa",
+        "lemari",
+        "meja",
+        "piring"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "explanation": "Meja, kursi, lemari, dan sofa adalah perabot; piring adalah peralatan makan."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Lanjutan deret 1, 4, 9, 16, 25, … adalah",
+      "options": [
+        "30",
+        "34",
+        "36",
+        "42",
+        "49"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Deret bilangan kuadrat: 1², 2², 3², 4², 5², lalu 6² = 36."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Lanjutan deret 2, 3, 5, 8, 13, … adalah",
+      "options": [
+        "18",
+        "20",
+        "21",
+        "23",
+        "26"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Setiap suku adalah jumlah dua suku sebelumnya: 8 + 13 = 21."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lanjutan deret huruf B, D, G, K, P, … adalah",
+      "options": [
+        "T",
+        "U",
+        "V",
+        "W",
+        "X"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Urutan huruf 2, 4, 7, 11, 16 (selisih 2, 3, 4, 5). Selisih berikutnya 6, jadi 22 = V."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Jika KUDA disandikan menjadi LVEB, maka SAPI disandikan menjadi …",
+      "options": [
+        "TCQJ",
+        "TBRJ",
+        "RZOH",
+        "TBQJ",
+        "SBQJ"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Setiap huruf digeser satu ke depan: S→T, A→B, P→Q, I→J."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Bilangan yang tidak termasuk kelompoknya: 3, 5, 7, 9, 11 adalah",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "3, 5, 7, dan 11 adalah bilangan prima; 9 = 3 × 3 bukan prima."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Tiga ekor kucing menangkap tiga ekor tikus dalam tiga menit. Berapa menit yang dibutuhkan 100 ekor kucing untuk menangkap 100 ekor tikus?",
+      "options": [
+        "1 menit",
+        "3 menit",
+        "33 menit",
+        "100 menit",
+        "300 menit"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Setiap kucing menangkap satu tikus dalam 3 menit, jadi 100 kucing menangkap 100 tikus juga dalam 3 menit."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 3,
+      "body": "Pada pukul 03.15, besar sudut terkecil antara jarum jam dan jarum menit adalah …",
+      "options": [
+        "0°",
+        "7,5°",
+        "15°",
+        "22,5°",
+        "30°"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Jarum menit di 90°. Jarum jam bergerak 0,5° per menit: 3 × 30° + 15 × 0,5° = 97,5°. Selisihnya 7,5°."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 1,
+      "body": "Manakah yang tidak termasuk kelompoknya: merah, kuning, hijau, biru, manis?",
+      "options": [
+        "biru",
+        "merah",
+        "manis",
+        "hijau",
+        "kuning"
+      ],
+      "scores": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "explanation": "Merah, kuning, hijau, dan biru adalah warna; manis adalah rasa."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "Lanjutan deret 100, 95, 85, 70, 50, … adalah",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "scores": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "explanation": "Pengurangnya bertambah 5: −5, −10, −15, −20, lalu −25. Maka 50 − 25 = 25."
+    },
+    {
+      "category": "PSI-UMUM",
+      "type": "single",
+      "difficulty": 2,
+      "body": "A lebih berat dari B. C lebih ringan dari B. D lebih berat dari A. Siapa yang paling berat?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "Tidak dapat ditentukan"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "explanation": "Urutan dari terberat: D, A, B, C."
+    }
+  ]
+}

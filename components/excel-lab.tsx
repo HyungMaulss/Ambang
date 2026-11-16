@@ -107,7 +107,7 @@ export function ExcelLab({ ex }: { ex: Exercise }) {
         </Tip>
       </div>
 
-      <div className={`overflow-x-auto rounded-[8px] border border-line ${shake ? "anim-shake" : ""}`}>
+      <div className={`overflow-x-auto rounded-none border border-line ${shake ? "anim-shake" : ""}`}>
         <table className="w-full min-w-[520px] border-collapse text-[14px]">
           <thead>
             <tr className="bg-surface text-[12px] text-muted">
@@ -171,7 +171,7 @@ export function ExcelLab({ ex }: { ex: Exercise }) {
             setCells(seed);
             setCheck(null);
           }}
-          className="text-[14px] text-muted underline underline-offset-2 transition-colors hover:text-fg sm:ml-auto"
+          className="link text-[14px] text-muted hover:text-fg sm:ml-auto"
         >
           Reset grid
         </button>
@@ -202,7 +202,7 @@ export function ExcelLab({ ex }: { ex: Exercise }) {
       )}
 
       {check && (
-        <div className={`anim-fade-up rounded-[8px] p-4 ${check.score === 100 ? "bg-accent text-on-accent anim-pop" : "border border-line"}`} role="status">
+        <div className={`anim-fade-up rounded-none p-4 ${check.score === 100 ? "bg-accent text-on-accent anim-pop" : "border border-line"}`} role="status">
           <p className="font-display text-[28px] tracking-[-0.02em]">{check.score}%</p>
           <p className="mt-1 text-[14px]">
             {Object.values(check.ok).filter(Boolean).length}/{ex.targets.length} sel benar.

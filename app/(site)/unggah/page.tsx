@@ -112,14 +112,14 @@ export default function UnggahPage() {
       </div>
 
       <div className="grid gap-3 md:grid-cols-2">
-        <a href="/template-soal-ambang.docx" download className="card group flex items-center justify-between gap-4 p-5 transition-colors hover:border-fg">
+        <a href="/template-soal-ambang.docx" download className="card lift group flex items-center justify-between gap-4 p-5">
           <span>
             <span className="block font-medium">1. Unduh template .docx</span>
             <span className="text-[14px] text-muted">Format: Soal:, A.–E., Kunci: atau Bobot:, Pembahasan:</span>
           </span>
           <Icon.ArrowLg className="arrow shrink-0 transition-transform group-hover:translate-y-0.5 group-hover:rotate-90" />
         </a>
-        <label className="card group flex cursor-pointer items-center justify-between gap-4 p-5 transition-colors hover:border-fg focus-within:border-fg">
+        <label className="card lift group flex cursor-pointer items-center justify-between gap-4 p-5 focus-within:border-fg">
           <span>
             <span className="block font-medium">2. Pilih file .docx atau .pdf</span>
             <span className="text-[14px] text-muted">Maks. 5 MB / 30 halaman. PDF scan tidak didukung.</span>
@@ -219,7 +219,7 @@ function PreviewCard({ n, p, onChange, onRemove }: { n: number; p: ParsedQuestio
   const setOpt = (label: string, patch: Partial<{ body: string; score: number }>) =>
     onChange((x) => ({ ...x, options: opts.map((o) => (o.label === label ? { ...o, ...patch } : o)) }));
   return (
-    <div className={`anim-fade-up flex flex-col gap-3 rounded-[8px] border p-4 md:p-5 ${p.errors.length ? "border-danger/60" : "border-line"}`}>
+    <div className={`anim-fade-up flex flex-col gap-3 rounded-none border p-4 md:p-5 ${p.errors.length ? "border-danger/60" : "border-line"}`}>
       <div className="flex items-center justify-between gap-3">
         <span className="font-display text-[14px] font-medium text-muted">
           Soal {n} · {p.type === "weighted" ? "TKP berbobot" : "satu kunci"}
@@ -228,7 +228,7 @@ function PreviewCard({ n, p, onChange, onRemove }: { n: number; p: ParsedQuestio
         <div className="flex items-center gap-3">
           <button
             type="button"
-            className="text-[13px] text-muted underline underline-offset-2 hover:text-fg"
+            className="link text-[13px] text-muted hover:text-fg"
             onClick={() => onChange((x) => ({ ...x, type: x.type === "single" ? "weighted" : "single", options: opts.map((o) => ({ ...o, score: x.type === "single" ? 3 : 0 })) }))}
           >
             Ubah ke {p.type === "single" ? "TKP" : "satu kunci"}
@@ -248,7 +248,7 @@ function PreviewCard({ n, p, onChange, onRemove }: { n: number; p: ParsedQuestio
                 aria-label={`Jadikan ${o.label} kunci`}
                 aria-pressed={o.score === 5}
                 onClick={() => onChange((x) => ({ ...x, options: opts.map((y) => ({ ...y, score: y.label === o.label ? 5 : 0 })) }))}
-                className={`flex size-9 shrink-0 items-center justify-center rounded-[4px] border font-display text-[14px] transition-colors ${
+                className={`flex size-9 shrink-0 items-center justify-center rounded-none border font-display text-[14px] transition-colors ${
                   o.score === 5 ? "border-accent bg-accent text-on-accent" : "border-line hover:border-fg"
                 }`}
               >

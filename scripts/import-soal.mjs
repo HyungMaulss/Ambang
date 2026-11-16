@@ -1,16 +1,18 @@
 // B7: impor massal soal oleh admin. Pakai service role key, jalankan dari komputer Anda (bukan browser).
-//   node --env-file=.env.local scripts/import-soal.mjs data/soal-contoh.json
-//   node --env-file=.env.local scripts/import-soal.mjs soal.csv
+//   npm run import-soal                 → semua file bawaan: data/soal-contoh.json (kategori & konfigurasi) lalu data/soal-*.json
+//   npm run import-soal -- soal.csv     → file tertentu (JSON atau CSV), bisa lebih dari satu
 // CSV kolom: category,type,body,A,B,C,D,E,kunci,explanation,difficulty,source
 //   kunci = "C" (single) atau "A=3;B=1;C=5;D=4;E=2" (weighted/TKP)
 // Soal impor admin langsung berstatus published + public. Soal dengan teks sama di kategori sama dilewati.
 import { createClient } from "@supabase/supabase-js";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 
-const file = process.argv[2];
+const files = process.argv.length > 2
+  ? process.argv.slice(2)
+  : ["data/soal-contoh.json", ...readdirSync("data").filter((f) => /^soal-(?!contoh).*.json$/.test(f)).sort().map((f) => `data/${f}`)];
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-if (!file || !url || !key) {
+if (!url || !key) {
   console.error("Pakai: node --env-file=.env.local scripts/import-soal.mjs <file.json|file.csv>  (butuh NEXT_PUBLIC_SUPABASE_URL & SUPABASE_SERVICE_ROLE_KEY)");
   process.exit(1);
 }
@@ -57,6 +59,8 @@ function validate(q, i) {
   return !err.length;
 }
 
+for (const file of files) {
+console.log(`— ${file}`);
 const text = readFileSync(file, "utf8");
 const data = file.endsWith(".json") ? JSON.parse(text) : { questions: parseCsv(text).map(fromCsvRow) };
 
@@ -91,3 +95,4 @@ for (const [i, q] of (data.questions ?? []).entries()) {
   added++;
 }
 console.log(`Soal: ${added} ditambahkan, ${skipped} sudah ada.`);
+}

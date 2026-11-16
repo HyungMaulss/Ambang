@@ -1,0 +1,1075 @@
+{
+  "questions": [
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang warga datang ke loket Anda lima menit sebelum layanan tutup dengan berkas yang belum lengkap. Sikap Anda …",
+      "options": [
+        "Meminta warga kembali besok karena layanan hampir tutup",
+        "Menolak berkas karena tidak lengkap",
+        "Menjelaskan kekurangan berkas dengan ramah, memberi daftar persyaratan tertulis, dan memastikan warga tahu kapan bisa kembali",
+        "Menerima berkas yang ada dan meminta sisanya menyusul bila aturan memungkinkan",
+        "Menyarankan warga bertanya ke petugas lain"
+      ],
+      "scores": [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      "explanation": "Nilai tertinggi untuk sikap yang tetap melayani, jelas, dan memberi kepastian tanpa melanggar prosedur. Melempar ke petugas lain atau menolak mentah-mentah bernilai rendah."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda memimpin proyek lintas unit, tetapi unit lain lambat mengirim data yang Anda butuhkan. Sikap Anda …",
+      "options": [
+        "Menunggu sampai mereka mengirim data",
+        "Melaporkan keterlambatan ke atasan tanpa menghubungi unit tersebut",
+        "Menghubungi penanggung jawab unit itu, menjelaskan kebutuhan dan tenggat, lalu menyepakati jadwal pengiriman",
+        "Mengirim surel pengingat secara berkala",
+        "Mencari data pembanding dari sumber lain sambil tetap berkoordinasi"
+      ],
+      "scores": [
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "explanation": "Jejaring kerja menilai inisiatif membangun koordinasi langsung dan kesepakatan. Pasif menunggu bernilai paling rendah."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Di tempat kerja baru, rekan-rekan Anda berasal dari latar budaya yang berbeda dan punya kebiasaan yang asing bagi Anda. Sikap Anda …",
+      "options": [
+        "Lebih sering bergaul dengan rekan yang sedaerah",
+        "Bersikap netral dan tidak terlalu ikut campur",
+        "Mempelajari kebiasaan mereka, menghargai perbedaan, dan aktif menjalin keakraban",
+        "Menghormati kebiasaan mereka meski belum memahaminya",
+        "Meminta mereka menyesuaikan diri dengan kebiasaan Anda"
+      ],
+      "scores": [
+        2,
+        3,
+        5,
+        4,
+        1
+      ],
+      "explanation": "Sikap adaptif dan proaktif menghargai keberagaman mendapat nilai tertinggi; memaksakan kebiasaan sendiri terendah."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Kantor Anda menerapkan aplikasi persuratan elektronik baru yang belum Anda kuasai. Sikap Anda …",
+      "options": [
+        "Tetap memakai cara manual karena lebih nyaman",
+        "Meminta rekan mengoperasikannya untuk Anda",
+        "Mempelajari panduan dan berlatih hingga mahir, lalu membantu rekan yang kesulitan",
+        "Mempelajarinya saat ada pelatihan resmi",
+        "Mempelajarinya sendiri saat ada waktu luang"
+      ],
+      "scores": [
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "explanation": "Nilai tertinggi untuk kemauan belajar teknologi secara aktif dan berbagi ke tim."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Atasan memberi tugas mendesak saat Anda sedang menyelesaikan pekerjaan lain yang juga bertenggat. Sikap Anda …",
+      "options": [
+        "Mengerjakan tugas baru dan meninggalkan pekerjaan lama",
+        "Menolak tugas baru",
+        "Menyampaikan beban kerja saat ini, menyepakati prioritas dengan atasan, lalu bekerja sesuai kesepakatan",
+        "Mengerjakan keduanya bersamaan semampunya",
+        "Lembur agar keduanya selesai tepat waktu"
+      ],
+      "scores": [
+        2,
+        1,
+        5,
+        3,
+        4
+      ],
+      "explanation": "Profesionalisme berarti transparan soal kapasitas dan menyepakati prioritas, bukan menolak atau mengorbankan pekerjaan lain diam-diam."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Di grup percakapan kantor, seorang rekan membagikan unggahan yang menyudutkan kelompok agama tertentu dan mengajak membenci mereka. Sikap Anda …",
+      "options": [
+        "Ikut menanggapi dengan emosi",
+        "Mengabaikannya",
+        "Mengingatkan secara santun dengan alasan yang jelas, dan melapor ke admin atau atasan bila berlanjut",
+        "Keluar dari grup",
+        "Mengingatkan rekan tersebut secara pribadi"
+      ],
+      "scores": [
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "explanation": "Sikap antiradikalisme yang terbaik menolak ujaran kebencian secara aktif namun santun, dan memakai jalur resmi bila perlu."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang warga marah-marah di loket karena antrean lama. Sikap Anda …",
+      "options": [
+        "Mendengarkan dengan tenang, meminta maaf atas ketidaknyamanan, menjelaskan penyebab dan perkiraan waktu tunggu",
+        "Meminta warga bersabar karena semua orang juga mengantre",
+        "Membalas dengan nada tegas agar warga tenang",
+        "Menjelaskan bahwa antrean lama karena petugas sedang sedikit",
+        "Memanggil petugas keamanan"
+      ],
+      "scores": [
+        5,
+        3,
+        1,
+        4,
+        2
+      ],
+      "explanation": "Nilai tertinggi untuk empati, permintaan maaf, dan kepastian informasi. Membalas dengan nada tinggi atau langsung memanggil keamanan memperburuk layanan."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Seorang lansia kesulitan mengisi formulir layanan daring. Sikap Anda …",
+      "options": [
+        "Mengisikan formulir untuknya tanpa banyak penjelasan",
+        "Memintanya datang lagi bersama anggota keluarga",
+        "Membantu langkah demi langkah sambil menjelaskan agar lain kali ia bisa lebih mandiri",
+        "Memberikan panduan tertulis",
+        "Memintanya kembali saat loket sepi"
+      ],
+      "scores": [
+        4,
+        2,
+        5,
+        3,
+        1
+      ],
+      "explanation": "Membantu langsung sambil memberdayakan pengguna layanan bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Kerabat Anda datang ke kantor dan meminta didahulukan dari antrean. Sikap Anda …",
+      "options": [
+        "Mendahulukannya bila antrean sedang sedikit",
+        "Mendahulukannya karena ia kerabat",
+        "Meminta rekan lain yang melayaninya",
+        "Menginformasikan jam layanan yang lebih sepi agar tidak menunggu lama",
+        "Menolak dengan sopan dan memintanya mengikuti antrean seperti warga lain"
+      ],
+      "scores": [
+        2,
+        1,
+        3,
+        4,
+        5
+      ],
+      "explanation": "Pelayanan publik harus adil dan tidak diskriminatif, termasuk terhadap kerabat sendiri."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda menyadari telah memberikan informasi persyaratan yang keliru kepada warga yang sudah pulang. Sikap Anda …",
+      "options": [
+        "Memperbaiki papan informasi agar warga lain tidak keliru",
+        "Menunggu warga itu kembali lalu menjelaskan",
+        "Membiarkannya karena warga akan tahu sendiri",
+        "Segera menghubungi warga tersebut, meminta maaf, dan memberikan informasi yang benar",
+        "Melaporkan kekeliruan itu kepada atasan"
+      ],
+      "scores": [
+        4,
+        2,
+        1,
+        5,
+        3
+      ],
+      "explanation": "Bertanggung jawab atas kesalahan dan memperbaikinya secara proaktif bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Sistem layanan mengalami gangguan saat jam sibuk. Sikap Anda …",
+      "options": [
+        "Mencatat data warga untuk diproses setelah sistem pulih",
+        "Mengumumkan gangguan secara terbuka, membuka pencatatan manual, dan melapor ke tim TI",
+        "Meminta warga datang lagi besok",
+        "Menutup loket sampai sistem pulih",
+        "Melapor ke tim TI lalu menunggu"
+      ],
+      "scores": [
+        4,
+        5,
+        2,
+        1,
+        3
+      ],
+      "explanation": "Transparansi, solusi sementara, dan eskalasi teknis sekaligus menjaga layanan tetap berjalan."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Setelah dilayani, seorang warga memberikan amplop sebagai tanda terima kasih. Sikap Anda …",
+      "options": [
+        "Menolak dan memintanya tidak mengulanginya",
+        "Menolak dengan sopan dan menjelaskan bahwa layanan ini tidak dipungut biaya",
+        "Menerimanya karena layanan sudah selesai",
+        "Menerima lalu menyerahkannya ke koperasi kantor",
+        "Menolak dengan wajah kesal"
+      ],
+      "scores": [
+        4,
+        5,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Menolak gratifikasi dengan santun sambil memberi edukasi adalah sikap terbaik."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Hasil survei kepuasan menunjukkan nilai unit Anda rendah. Sikap Anda …",
+      "options": [
+        "Memperbaiki keramahan diri sendiri",
+        "Membahasnya dalam rapat tim",
+        "Menganalisis masukan, mengusulkan perbaikan konkret, lalu memantau hasilnya",
+        "Menunggu arahan atasan",
+        "Menganggap survei tidak mewakili kenyataan"
+      ],
+      "scores": [
+        3,
+        4,
+        5,
+        2,
+        1
+      ],
+      "explanation": "Inisiatif berbasis data dan tindak lanjut terukur bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PEL",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang warga penyandang disabilitas netra datang untuk mengurus dokumen. Sikap Anda …",
+      "options": [
+        "Mendahulukan layanannya",
+        "Langsung menuntunnya tanpa bertanya",
+        "Menawarkan bantuan, menanyakan kebutuhannya, lalu memandu dengan cara yang ia nyaman",
+        "Meminta pendampingnya yang mengurus semuanya",
+        "Melayaninya seperti biasa tanpa penyesuaian"
+      ],
+      "scores": [
+        4,
+        3,
+        5,
+        2,
+        1
+      ],
+      "explanation": "Layanan inklusif menghormati otonomi: tawarkan bantuan dan tanyakan kebutuhan lebih dulu."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Rekan dari unit lain meminta bantuan data ketika Anda sedang sibuk. Sikap Anda …",
+      "options": [
+        "Mengirim data seadanya",
+        "Membantu setelah pekerjaan selesai tanpa memberi kabar",
+        "Mengarahkannya ke rekan lain yang juga memegang data itu",
+        "Menyanggupi dengan menyepakati waktu penyerahan yang realistis",
+        "Menolak karena sedang sibuk"
+      ],
+      "scores": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "explanation": "Tetap kooperatif sambil mengelola ekspektasi waktu menjaga jejaring kerja."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang anggota tim tidak menyelesaikan bagiannya sehingga pekerjaan tim terhambat. Sikap Anda …",
+      "options": [
+        "Menegurnya di depan anggota tim lain",
+        "Melaporkannya kepada atasan",
+        "Mengerjakan bagiannya diam-diam",
+        "Membagi ulang tugas bersama tim",
+        "Mengajaknya bicara untuk memahami kendala dan menyepakati solusi bersama"
+      ],
+      "scores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "explanation": "Komunikasi langsung dan solusi bersama bernilai tertinggi; menegur di depan umum merusak hubungan kerja."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda ditugasi menjajaki kerja sama dengan instansi lain yang belum Anda kenal. Sikap Anda …",
+      "options": [
+        "Menyerahkan tugas itu kepada rekan lain",
+        "Menunggu instansi itu menghubungi lebih dulu",
+        "Mengirim surat resmi lalu menunggu balasan",
+        "Mempelajari profil dan kebutuhan instansi itu, lalu menghubungi pejabat terkait",
+        "Meminta rekan yang mengenal pejabat di sana untuk memperkenalkan"
+      ],
+      "scores": [
+        2,
+        1,
+        3,
+        5,
+        4
+      ],
+      "explanation": "Persiapan dan inisiatif membangun hubungan secara langsung bernilai tertinggi."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Dalam rapat koordinasi, usulan Anda ditolak oleh mayoritas peserta. Sikap Anda …",
+      "options": [
+        "Diam dan tidak ikut melaksanakan keputusan",
+        "Menerima keputusan, mendukung pelaksanaannya, dan mencatat risiko yang perlu diantisipasi",
+        "Menyampaikan data tambahan sebelum keputusan final",
+        "Menerima keputusan meski kecewa",
+        "Tetap bersikeras sampai usulan diterima"
+      ],
+      "scores": [
+        2,
+        5,
+        4,
+        3,
+        1
+      ],
+      "explanation": "Menghormati keputusan bersama sambil tetap berkontribusi pada keberhasilannya."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Pegawai baru di tim Anda tampak canggung dan jarang berbicara. Sikap Anda …",
+      "options": [
+        "Membiarkannya beradaptasi sendiri",
+        "Memintanya bertanya bila perlu",
+        "Mengenalkannya kepada anggota tim lain",
+        "Mengajaknya berkenalan, menjelaskan cara kerja tim, dan melibatkannya dalam tugas",
+        "Menyapanya sesekali"
+      ],
+      "scores": [
+        1,
+        3,
+        4,
+        5,
+        2
+      ],
+      "explanation": "Merangkul anggota baru secara aktif mempercepat adaptasi dan kerja sama."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Miskomunikasi antarunit menyebabkan pekerjaan yang sama dikerjakan dua kali. Sikap Anda …",
+      "options": [
+        "Mengusulkan forum koordinasi dan pembagian tugas tertulis agar tidak terulang",
+        "Membiarkannya karena sudah terlanjur",
+        "Mengklarifikasi kepada unit terkait",
+        "Menyelesaikan pekerjaan ganda itu saja",
+        "Menyalahkan unit lain"
+      ],
+      "scores": [
+        5,
+        2,
+        4,
+        3,
+        1
+      ],
+      "explanation": "Mencegah masalah berulang lewat sistem koordinasi bernilai tertinggi."
+    },
+    {
+      "category": "TKP-JEJ",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Anda memiliki informasi yang berguna bagi tim lain. Sikap Anda …",
+      "options": [
+        "Menyimpannya untuk keunggulan pribadi",
+        "Melaporkannya ke atasan agar diteruskan",
+        "Memberi tahu teman dekat di tim itu saja",
+        "Membagikannya bila diminta",
+        "Membagikannya melalui kanal resmi agar dimanfaatkan bersama"
+      ],
+      "scores": [
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "explanation": "Berbagi pengetahuan secara terbuka memperkuat jejaring organisasi."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda ditempatkan di daerah yang bahasa daerahnya tidak Anda kuasai. Sikap Anda …",
+      "options": [
+        "Tetap hanya berbicara bahasa Indonesia",
+        "Mengajukan mutasi",
+        "Mempelajari bahasa dan adat setempat sambil tetap memakai bahasa Indonesia yang santun saat bertugas",
+        "Mempelajari beberapa kata sapaan setempat",
+        "Meminta rekan menerjemahkan setiap saat"
+      ],
+      "scores": [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      "explanation": "Adaptasi aktif terhadap budaya setempat bernilai tertinggi."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Rekan kerja Anda menjalankan ibadah sesuai agamanya pada jam kerja. Sikap Anda …",
+      "options": [
+        "Mengingatkannya agar cepat kembali",
+        "Membiarkannya",
+        "Menghormatinya dan ikut mengatur jadwal tugas agar pekerjaan tetap berjalan",
+        "Menggantikan tugasnya sementara",
+        "Merasa terganggu"
+      ],
+      "scores": [
+        2,
+        3,
+        5,
+        4,
+        1
+      ],
+      "explanation": "Menghormati kebebasan beribadah sambil menjaga kelancaran kerja tim."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Beberapa rekan bercanda dengan materi yang menyinggung suku tertentu. Sikap Anda …",
+      "options": [
+        "Mengingatkan salah satu rekan secara pribadi setelahnya",
+        "Mengingatkan dengan santun bahwa candaan itu dapat menyakiti dan tidak pantas",
+        "Meninggalkan ruangan",
+        "Diam saja",
+        "Ikut tertawa agar suasana cair"
+      ],
+      "scores": [
+        4,
+        5,
+        3,
+        2,
+        1
+      ],
+      "explanation": "Menolak candaan bernada SARA secara santun dan langsung bernilai tertinggi."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Anda diundang ke acara adat rekan kerja yang berbeda budaya. Sikap Anda …",
+      "options": [
+        "Hanya mengirim ucapan",
+        "Tidak hadir karena tidak memahami adatnya",
+        "Hadir dan mengikuti tamu lainnya",
+        "Hadir, mempelajari tata caranya, dan menghormati adat yang berlaku",
+        "Hadir sebentar"
+      ],
+      "scores": [
+        2,
+        1,
+        4,
+        5,
+        3
+      ],
+      "explanation": "Kehadiran disertai usaha memahami budaya lain bernilai tertinggi."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Masyarakat setempat menolak program pemerintah karena dianggap tidak sesuai kebiasaan mereka. Sikap Anda …",
+      "options": [
+        "Mengadakan sosialisasi ulang",
+        "Berdialog dengan tokoh masyarakat untuk memahami alasannya dan menyesuaikan pendekatan program",
+        "Membatalkan program",
+        "Melaporkan penolakan itu kepada atasan",
+        "Tetap menjalankannya sesuai rencana"
+      ],
+      "scores": [
+        4,
+        5,
+        1,
+        3,
+        2
+      ],
+      "explanation": "Dialog dan penyesuaian pendekatan dengan kearifan lokal bernilai tertinggi."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Tim Anda terdiri dari beberapa generasi dengan gaya kerja yang berbeda. Sikap Anda …",
+      "options": [
+        "Mengusulkan aturan kerja tim",
+        "Bekerja sendiri agar tidak berselisih",
+        "Mengikuti gaya mayoritas",
+        "Memahami kelebihan masing-masing dan menyepakati cara kerja bersama",
+        "Memaksakan gaya kerja Anda"
+      ],
+      "scores": [
+        4,
+        2,
+        3,
+        5,
+        1
+      ],
+      "explanation": "Menghargai keberagaman dan membangun kesepakatan bersama bernilai tertinggi."
+    },
+    {
+      "category": "TKP-SOS",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Tetangga baru dari daerah lain terlihat kesulitan menyesuaikan diri di lingkungan Anda. Sikap Anda …",
+      "options": [
+        "Mengunjunginya, mengenalkan lingkungan dan kebiasaan setempat, serta mengajaknya ke kegiatan warga",
+        "Tidak peduli",
+        "Menunggu ia menyapa lebih dulu",
+        "Mengundangnya ke kegiatan warga",
+        "Menyapa bila bertemu"
+      ],
+      "scores": [
+        5,
+        1,
+        2,
+        4,
+        3
+      ],
+      "explanation": "Inisiatif merangkul pendatang mempererat kehidupan sosial."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda menerima surel yang mengatasnamakan tim TI dan meminta kata sandi akun kantor. Sikap Anda …",
+      "options": [
+        "Melaporkannya ke tim TI",
+        "Tidak mengklik apa pun, melaporkannya ke tim TI, dan memperingatkan rekan kerja",
+        "Membalas surel untuk menanyakan kebenarannya",
+        "Membuka tautannya untuk memeriksa",
+        "Menghapus surel itu"
+      ],
+      "scores": [
+        4,
+        5,
+        2,
+        1,
+        3
+      ],
+      "explanation": "Mengenali phishing, melapor, dan mencegah korban lain adalah sikap terbaik."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Rekapitulasi data di unit Anda masih manual dan memakan waktu berhari-hari. Sikap Anda …",
+      "options": [
+        "Tetap mengerjakannya secara manual",
+        "Lembur agar selesai tepat waktu",
+        "Meminta tambahan pegawai",
+        "Mencari referensi cara mempercepatnya",
+        "Membuat otomatisasi sederhana dengan aplikasi yang tersedia lalu mengusulkannya kepada tim"
+      ],
+      "scores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "explanation": "Memanfaatkan teknologi untuk efisiensi dan membagikannya bernilai tertinggi."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Laptop kantor Anda menyimpan data pribadi warga. Sikap Anda …",
+      "options": [
+        "Menyimpannya di folder khusus",
+        "Mengamankan perangkat dengan kata sandi dan enkripsi, serta tidak menyimpan data di perangkat pribadi",
+        "Menyalinnya ke flashdisk pribadi agar mudah dibawa",
+        "Membiarkannya seperti biasa",
+        "Memberi kata sandi pada laptop"
+      ],
+      "scores": [
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Pelindungan data pribadi menuntut pengamanan berlapis dan disiplin penyimpanan."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Rapat akan digelar daring memakai aplikasi yang belum pernah Anda gunakan. Sikap Anda …",
+      "options": [
+        "Mencoba aplikasi itu lebih awal dan mempelajari fitur dasarnya sebelum rapat",
+        "Meminta rapat diubah menjadi tatap muka",
+        "Meminta bantuan rekan saat rapat dimulai",
+        "Membaca panduan singkatnya",
+        "Mengikuti rapat tanpa persiapan"
+      ],
+      "scores": [
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      "explanation": "Mempersiapkan diri dengan teknologi baru secara mandiri bernilai tertinggi."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Atasan meminta Anda membuat dasbor laporan, padahal Anda belum pernah membuatnya. Sikap Anda …",
+      "options": [
+        "Membuat laporan tabel biasa saja",
+        "Meminta rekan membuatkannya",
+        "Menolak karena belum menguasai",
+        "Mengikuti pelatihan bila tersedia",
+        "Mempelajarinya dari tutorial atau rekan, membuat versi awal, lalu meminta masukan"
+      ],
+      "scores": [
+        3,
+        2,
+        1,
+        4,
+        5
+      ],
+      "explanation": "Belajar cepat dan iteratif menunjukkan kemauan beradaptasi dengan teknologi."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda menemukan hoaks tentang instansi Anda yang ramai di media sosial. Sikap Anda …",
+      "options": [
+        "Melaporkannya ke humas beserta buktinya dan membantu menyebarkan klarifikasi resmi",
+        "Membiarkannya",
+        "Membalas para penyebarnya dengan emosi",
+        "Membuat klarifikasi di akun pribadi",
+        "Melaporkannya ke bagian humas"
+      ],
+      "scores": [
+        5,
+        2,
+        1,
+        3,
+        4
+      ],
+      "explanation": "Mengikuti jalur resmi dan mendukung klarifikasi lembaga bernilai tertinggi."
+    },
+    {
+      "category": "TKP-TIK",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Aplikasi layanan baru di kantor Anda sering bermasalah saat dipakai warga. Sikap Anda …",
+      "options": [
+        "Mencatat detail masalah, melaporkannya lewat kanal resmi, dan menyiapkan solusi sementara bagi warga",
+        "Meminta warga mencoba lagi nanti",
+        "Kembali ke cara lama tanpa memberi tahu siapa pun",
+        "Melaporkan masalah itu kepada pengembang",
+        "Mengeluh kepada rekan kerja"
+      ],
+      "scores": [
+        5,
+        3,
+        1,
+        4,
+        2
+      ],
+      "explanation": "Umpan balik yang terdokumentasi dan menjaga layanan tetap berjalan bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Tenggat laporan besok, tetapi pekerjaan belum selesai karena data dari unit lain terlambat. Sikap Anda …",
+      "options": [
+        "Menunggu data datang lalu terlambat menyerahkan",
+        "Lembur menyelesaikan bagian yang bisa dikerjakan",
+        "Menyalahkan unit lain di depan atasan",
+        "Memberi tahu atasan sejak dini, menyelesaikan bagian yang bisa, dan menyepakati tenggat baru",
+        "Menyerahkan laporan apa adanya tanpa penjelasan"
+      ],
+      "scores": [
+        3,
+        4,
+        2,
+        5,
+        1
+      ],
+      "explanation": "Transparansi lebih awal dan solusi terukur mencerminkan profesionalisme."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda ditugaskan mengerjakan pekerjaan di luar keahlian Anda. Sikap Anda …",
+      "options": [
+        "Menerima tetapi mengerjakannya seadanya",
+        "Menerima, mempelajari hal yang diperlukan, dan berkonsultasi dengan yang lebih ahli",
+        "Menerima dan meminta waktu tambahan",
+        "Meminta rekan yang ahli mengerjakannya",
+        "Menolak karena bukan bidang Anda"
+      ],
+      "scores": [
+        2,
+        5,
+        4,
+        3,
+        1
+      ],
+      "explanation": "Kesediaan belajar dan bertanggung jawab atas tugas bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda menemukan kesalahan angka pada laporan yang sudah dikirim ke atasan. Sikap Anda …",
+      "options": [
+        "Memperbaiki diam-diam di arsip Anda",
+        "Menunggu sampai ada yang bertanya",
+        "Segera memberi tahu atasan, mengirim revisi, dan menjelaskan bagian yang diperbaiki",
+        "Mendiamkannya karena atasan belum menyadari",
+        "Memberi tahu atasan secara lisan"
+      ],
+      "scores": [
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      "explanation": "Mengakui dan memperbaiki kesalahan secara terbuka adalah sikap profesional."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Rekan kerja meminta Anda mengisikan daftar hadirnya karena ia akan datang terlambat. Sikap Anda …",
+      "options": [
+        "Pura-pura tidak mendengar",
+        "Mengisikannya sekali ini saja",
+        "Mengisikannya karena ia teman dekat",
+        "Menolak dengan sopan dan mengingatkan aturan kehadiran",
+        "Menolak tanpa penjelasan"
+      ],
+      "scores": [
+        3,
+        2,
+        1,
+        5,
+        4
+      ],
+      "explanation": "Menolak pelanggaran disiplin sambil mengingatkan rekan bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Atasan mengkritik hasil kerja Anda dengan tajam di depan tim. Sikap Anda …",
+      "options": [
+        "Diam dan tidak menanggapi",
+        "Merasa tersinggung dan menurunkan semangat kerja",
+        "Menerima kritik itu dan memperbaikinya",
+        "Menerima kritik sebagai masukan, lalu menanyakan detail perbaikan secara baik setelah rapat",
+        "Membantah saat itu juga"
+      ],
+      "scores": [
+        3,
+        2,
+        4,
+        5,
+        1
+      ],
+      "explanation": "Menerima kritik secara dewasa dan menindaklanjutinya dengan konkret."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Anda ditawari pelatihan relevan dengan pekerjaan yang diadakan pada akhir pekan. Sikap Anda …",
+      "options": [
+        "Ikut dengan sungguh-sungguh karena menambah kompetensi",
+        "Ikut hanya jika ada uang saku",
+        "Ikut jika tidak ada acara lain",
+        "Ikut tetapi tidak serius",
+        "Menolak karena akhir pekan waktu istirahat"
+      ],
+      "scores": [
+        5,
+        2,
+        4,
+        3,
+        1
+      ],
+      "explanation": "Kemauan mengembangkan kompetensi diri bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Pekerjaan Anda sudah selesai lebih cepat dan masih ada waktu luang di jam kerja. Sikap Anda …",
+      "options": [
+        "Bermain gawai sampai jam kerja usai",
+        "Menawarkan bantuan kepada tim atau mempelajari hal yang menunjang pekerjaan",
+        "Pulang lebih awal",
+        "Menunggu tugas berikutnya dari atasan",
+        "Merapikan arsip pekerjaan"
+      ],
+      "scores": [
+        2,
+        5,
+        1,
+        3,
+        4
+      ],
+      "explanation": "Inisiatif memanfaatkan waktu kerja secara produktif bernilai tertinggi."
+    },
+    {
+      "category": "TKP-PRO",
+      "type": "weighted",
+      "difficulty": 3,
+      "body": "Atasan meminta Anda mempercepat proses dengan melewati satu tahapan yang diwajibkan aturan. Sikap Anda …",
+      "options": [
+        "Langsung melaksanakannya karena perintah atasan",
+        "Menyampaikan dengan sopan aturan yang berlaku dan mengusulkan alternatif percepatan yang sesuai aturan",
+        "Menolak tanpa penjelasan",
+        "Melaksanakannya tetapi mencatatnya diam-diam",
+        "Meminta perintah itu secara tertulis"
+      ],
+      "scores": [
+        1,
+        5,
+        3,
+        2,
+        4
+      ],
+      "explanation": "Profesionalisme berarti patuh aturan sambil tetap memberi solusi kepada atasan."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Anda diajak bergabung dengan kelompok diskusi yang bertujuan mengganti Pancasila sebagai dasar negara. Sikap Anda …",
+      "options": [
+        "Menolak dan menjauhi kelompok itu",
+        "Bergabung untuk mencari tahu",
+        "Menolak tegas dan melaporkannya kepada pihak berwenang",
+        "Menolak secara halus",
+        "Bergabung tetapi pasif"
+      ],
+      "scores": [
+        4,
+        1,
+        5,
+        3,
+        2
+      ],
+      "explanation": "Menolak ideologi anti-Pancasila dan melapor melalui jalur resmi bernilai tertinggi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang tetangga mulai menjauhi masyarakat dan menyebarkan pandangan bahwa kelompok lain harus dimusuhi. Sikap Anda …",
+      "options": [
+        "Melaporkannya kepada ketua RT",
+        "Membiarkannya karena urusan pribadi",
+        "Ikut menjauhinya",
+        "Menyebarkan kabar tentangnya kepada warga",
+        "Mendekatinya secara kekeluargaan, mengajak berdialog, dan berkoordinasi dengan tokoh masyarakat"
+      ],
+      "scores": [
+        4,
+        3,
+        1,
+        2,
+        5
+      ],
+      "explanation": "Pendekatan persuasif bersama tokoh masyarakat efektif mencegah radikalisasi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Video kekerasan yang mengatasnamakan agama viral di grup percakapan Anda. Sikap Anda …",
+      "options": [
+        "Mengingatkan anggota grup agar tidak menyebarkannya",
+        "Menontonnya lalu mendiamkannya",
+        "Keluar dari grup",
+        "Meneruskannya agar orang lain waspada",
+        "Tidak menyebarkan, mengingatkan anggota grup, dan melaporkan konten itu ke platform"
+      ],
+      "scores": [
+        4,
+        2,
+        3,
+        1,
+        5
+      ],
+      "explanation": "Memutus penyebaran konten kekerasan dan melapor ke platform bernilai tertinggi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang kenalan mengajak Anda untuk tidak lagi menghormati bendera Merah Putih karena dianggap bertentangan dengan keyakinan. Sikap Anda …",
+      "options": [
+        "Ragu dan memikirkannya",
+        "Mengikutinya",
+        "Menghindari kenalan itu",
+        "Menolak ajakannya",
+        "Menolak dan menjelaskan bahwa menghormati bendera adalah wujud cinta tanah air yang tidak bertentangan dengan agama"
+      ],
+      "scores": [
+        2,
+        1,
+        3,
+        4,
+        5
+      ],
+      "explanation": "Menolak sekaligus meluruskan pemahaman bernilai tertinggi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Ceramah di lingkungan tempat tinggal Anda mengandung ujaran kebencian terhadap kelompok lain. Sikap Anda …",
+      "options": [
+        "Menyampaikan keberatan kepada pengurus dan mengusulkan penceramah yang menyejukkan",
+        "Tidak lagi menghadiri kegiatan itu",
+        "Membicarakannya dengan tetangga",
+        "Mendukungnya karena disampaikan tokoh",
+        "Mendengarkan tanpa reaksi"
+      ],
+      "scores": [
+        5,
+        3,
+        4,
+        1,
+        2
+      ],
+      "explanation": "Menyampaikan keberatan melalui jalur yang tepat dan menawarkan solusi bernilai tertinggi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 1,
+      "body": "Anda diminta menjadi panitia kegiatan bakti sosial lintas agama di kantor. Sikap Anda …",
+      "options": [
+        "Menolak karena berbeda keyakinan",
+        "Bersedia tetapi pasif",
+        "Bersedia membantu bila sempat",
+        "Bersedia dan aktif mengajak rekan lain terlibat",
+        "Hanya menyumbang dana"
+      ],
+      "scores": [
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      "explanation": "Partisipasi aktif dalam kegiatan lintas agama memperkuat toleransi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Menjelang pemilu, beredar pesan provokatif yang mengajak memusuhi pendukung calon tertentu. Sikap Anda …",
+      "options": [
+        "Mendiamkannya",
+        "Mengecek kebenarannya, tidak menyebarkannya, dan mengingatkan grup agar tidak terprovokasi",
+        "Ikut menyebarkannya",
+        "Menyebarkannya dengan tambahan komentar",
+        "Menghapus pesan itu dari ponsel"
+      ],
+      "scores": [
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Memutus provokasi dan mengedukasi lingkungan bernilai tertinggi."
+    },
+    {
+      "category": "TKP-RAD",
+      "type": "weighted",
+      "difficulty": 2,
+      "body": "Seorang remaja di lingkungan Anda bertanya mengapa harus menghormati orang yang berbeda keyakinan. Sikap Anda …",
+      "options": [
+        "Menyuruhnya tidak membahas hal itu",
+        "Menjawab singkat bahwa toleransi itu penting",
+        "Menjelaskan nilai toleransi dalam Pancasila dengan contoh nyata kehidupan bersama",
+        "Menjawab bahwa itu urusan masing-masing",
+        "Memintanya bertanya kepada orang tuanya"
+      ],
+      "scores": [
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "explanation": "Edukasi yang jelas dan membumi menanamkan toleransi sejak dini."
+    }
+  ]
+}

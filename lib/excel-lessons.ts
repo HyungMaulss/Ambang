@@ -2,6 +2,8 @@
 // pada data yang sama, jadi tidak ada nilai harapan yang ditulis manual.
 // Hanya fungsi yang didukung HyperFormula (AVERAGEIFS tidak didukung — jangan dipakai).
 
+import { MORE } from "./excel-lessons-2.ts";
+
 export type Exercise = {
   id: string;
   prompt: string;
@@ -13,7 +15,7 @@ export type Exercise = {
 };
 export type Lesson = { slug: string; title: string; topic: string; summary: string; body: string[]; examples: { f: string; note: string }[]; exercise: Exercise };
 
-export const LESSONS: Lesson[] = [
+const BASE: Lesson[] = [
   {
     slug: "dasar",
     title: "Dasar rumus & referensi",
@@ -214,3 +216,8 @@ export const LESSONS: Lesson[] = [
     },
   },
 ];
+
+// Urutan belajar: dari dasar ke lanjutan, dikelompokkan per topik.
+const ORDER = ["dasar", "absolut", "logika", "ifs", "lookup", "iferror", "index-match", "teks", "teks-rapi", "tanggal", "hari-kerja", "agregasi", "countifs", "peringkat", "sumproduct"];
+const ALL = [...BASE, ...MORE];
+export const LESSONS: Lesson[] = ORDER.map((slug) => ALL.find((l) => l.slug === slug)!);

@@ -95,7 +95,7 @@ export function ReportButton({ questionId, kind }: { questionId: string; kind: "
       {state === "error" && <p className="text-[13px] text-danger">{msg}</p>}
     </form>
   ) : (
-    <button type="button" onClick={() => setOpen(true)} className="text-[13px] text-muted underline underline-offset-2 transition-colors hover:text-fg">
+    <button type="button" onClick={() => setOpen(true)} className="link text-[13px] text-muted hover:text-fg">
       {label}
     </button>
   );
