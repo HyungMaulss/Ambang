@@ -53,9 +53,9 @@ export function Modules() {
               onClick={() => setOpen(isOpen ? -1 : i)}
               className="group flex w-full items-center gap-4 px-2 py-[22px] text-left md:gap-8 md:px-9 md:py-7"
             >
-              <span className={`font-display text-[15px] font-medium md:text-[16px] ${isOpen ? "text-accent" : "text-muted"}`}>{n}</span>
+              <span className={`font-display text-[15px] font-medium md:text-[16px] ${isOpen ? "text-accent-ink" : "text-muted"}`}>{n}</span>
               <span className="flex-1 font-display text-[22px] tracking-[-0.02em] md:text-[32px]">{m.title}</span>
-              <span className={`transition-transform duration-300 ${isOpen ? "rotate-90 text-accent" : "group-hover:translate-x-1"}`}>
+              <span className={`transition-transform duration-300 ${isOpen ? "rotate-90 text-accent-ink" : "group-hover:translate-x-1"}`}>
                 <Icon.ArrowLg />
               </span>
             </button>

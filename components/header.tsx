@@ -116,7 +116,7 @@ export function Header() {
               key={n.href}
               href={n.href}
               style={{ animationDelay: `${i * 40}ms` }}
-              className={`anim-fade-up flex items-center justify-between border-b border-line py-4 font-display text-[22px] transition-colors hover:text-accent ${
+              className={`anim-fade-up flex items-center justify-between border-b border-line py-4 font-display text-[22px] transition-colors hover:text-accent-ink ${
                 isActive(path, n.href) ? "text-fg" : "text-muted"
               }`}
             >

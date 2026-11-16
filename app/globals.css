@@ -2,47 +2,55 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Token: struktur dari Figma "Ambang — UI Responsif" + Sistem logo v1, nada diredam agar menenangkan.
-   Terang: kertas batu hangat + tinta biru-slate. Gelap: slate kehijauan, bukan hitam murni. Aksen: madu (Signal yang dilunakkan).
-   Kontras teks ≥ 5:1 di kedua tema. */
+/* Token: struktur dari Figma "Ambang — UI Responsif" + Sistem logo v1.
+   Default: navy (tema .dark) dengan teks putih dan aksen emas lembut — kontras tinggi tapi tenang.
+   Tema terang: putih kebiruan dengan tinta navy. Kontras teks ≥ 6:1 di kedua tema. */
 :root {
-  --bg: #f3f0e8;
-  --surface: #faf8f3;
-  --fg: #1e2a2f;
-  --muted: #59656a;
-  --line: #d9d3c7;
-  --accent: #d4a049;
-  --on-accent: #1e2a2f;
-  --danger: #a8432f;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --fg: #0f1d33;
+  --muted: #4a5c77;
+  --line: #d3dce9;
+  --accent: #e8b13a;
+  --on-accent: #0f1d33;
+  --accent-ink: #8a5a00;
+  --danger: #b3412e;
+  --glow: rgb(31 111 178 / 0.08);
   color-scheme: light;
 }
 .dark {
-  --bg: #141a1c;
-  --surface: #1b2326;
-  --fg: #e7e3d9;
-  --muted: #9ba5a4;
-  --line: #2b3538;
-  --accent: #d9aa58;
-  --danger: #e8907f;
+  --bg: #0f1d33;
+  --surface: #162a47;
+  --fg: #f4f7fb;
+  --muted: #a7b6cb;
+  --line: #33507a;
+  --accent: #f2c14e;
+  --accent-ink: #f2c14e;
+  --danger: #ff9e8f;
+  --glow: rgb(124 195 238 / 0.12);
   color-scheme: dark;
 }
 
-/* Blok berpalet terbalik (mis. modul terbuka, pita kategori) */
+/* Blok berpalet terbalik (mis. modul terbuka, pita kategori): navy di tema terang, putih di tema navy */
 .inverse {
-  --bg: #1e2a2f;
-  --surface: #26343a;
-  --fg: #ece8de;
-  --muted: #a9b2b1;
-  --line: #34444a;
+  --bg: #0f1d33;
+  --surface: #162a47;
+  --fg: #f4f7fb;
+  --muted: #a7b6cb;
+  --line: #33507a;
+  --accent: #f2c14e;
+  --accent-ink: #f2c14e;
   background-color: var(--bg);
   color: var(--fg);
 }
 .dark .inverse {
-  --bg: #e7e3d9;
-  --surface: #f0ede5;
-  --fg: #1e2a2f;
-  --muted: #55616a;
-  --line: #cfc8bb;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --fg: #0f1d33;
+  --muted: #4a5c77;
+  --line: #d3dce9;
+  --accent: #e8b13a;
+  --accent-ink: #8a5a00;
 }
 
 @theme inline {
@@ -53,6 +61,7 @@
   --color-line: var(--line);
   --color-accent: var(--accent);
   --color-on-accent: var(--on-accent);
+  --color-accent-ink: var(--accent-ink);
   --color-danger: var(--danger);
   --font-sans: var(--font-jakarta), system-ui, sans-serif;
   --font-display: var(--font-bricolage), var(--font-jakarta), sans-serif;
@@ -369,7 +378,7 @@ body {
 }
 
 dialog::backdrop {
-  background: rgb(20 26 28 / 0.55);
+  background: rgb(8 16 30 / 0.6);
 }
 dialog[open] {
   animation: fade-up 0.25s ease;

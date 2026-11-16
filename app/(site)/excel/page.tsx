@@ -28,7 +28,7 @@ export default function ExcelIndex() {
               href={`/excel/${l.slug}`}
               className="group flex items-center gap-4 border-b border-line px-2 py-6 transition-colors duration-200 hover:bg-surface md:gap-8 md:px-9"
             >
-              <span className="font-display text-[15px] font-medium text-muted transition-colors group-hover:text-accent">{String(i + 1).padStart(2, "0")}</span>
+              <span className="font-display text-[15px] font-medium text-muted transition-colors group-hover:text-accent-ink">{String(i + 1).padStart(2, "0")}</span>
               <span className="flex flex-1 flex-col gap-1">
                 <span className="font-display text-[22px] tracking-[-0.02em] md:text-[30px]">{l.title}</span>
                 <span className="text-[14px] text-muted">{l.summary}</span>

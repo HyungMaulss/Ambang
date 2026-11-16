@@ -30,7 +30,7 @@ const HEAD_W = 40;
 const HEAD_H = 28;
 const EXTRA_ROWS = 3; // baris kosong untuk coret-coret
 const MAX_COLS = 8;
-const REF_COLORS = ["#2f6fde", "#e8590c", "#2b8a3e", "#9c36b5", "#c2255c"];
+const REF_COLORS = ["#4da3ff", "#ff8a4c", "#3ccf7a", "#b98cff", "#ff6b9a"] // terlihat di latar navy maupun putih;
 
 type Grid = string[][];
 type Rect = { r0: number; c0: number; r1: number; c1: number };
@@ -529,7 +529,7 @@ export function ExcelLab({ ex }: { ex: Exercise }) {
   const activeRaw = cells[anchor.r][anchor.c];
   const showHandle = !edit && sel.r0 === sel.r1 && sel.c0 === sel.c1 && editable(anchor);
   const assist = edit && (sugs.length > 0 || (fnHint && FUNCTIONS[fnHint.name])) && (
-    <div className="absolute top-full left-0 z-40 mt-1 w-max max-w-[min(420px,85vw)] border border-line bg-bg text-[13px] shadow-[0_10px_28px_-14px_rgb(30_42_47/0.3)]" role="listbox" aria-label="Saran fungsi">
+    <div className="absolute top-full left-0 z-40 mt-1 w-max max-w-[min(420px,85vw)] border border-line bg-bg text-[13px] shadow-[0_10px_28px_-14px_rgb(6_14_28/0.3)]" role="listbox" aria-label="Saran fungsi">
       {sugs.length > 0 ? (
         sugs.map((n, i) => (
           <button

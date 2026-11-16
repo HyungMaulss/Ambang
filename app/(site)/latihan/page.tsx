@@ -85,7 +85,7 @@ export default function LatihanPage() {
               >
                 <button type="button" onClick={() => setSel(p.id)} className="flex items-start justify-between gap-3 text-left" aria-pressed={sel === p.id}>
                   <span>
-                    <span className={`font-display text-[14px] font-medium ${active ? "text-accent" : "text-muted"}`}>{p.id === "PRIBADI" ? "Unggahan" : p.id}</span>
+                    <span className={`font-display text-[14px] font-medium ${active ? "text-accent-ink" : "text-muted"}`}>{p.id === "PRIBADI" ? "Unggahan" : p.id}</span>
                     <span className="mt-1 block font-display text-[22px] leading-tight tracking-[-0.02em]">{p.name}</span>
                   </span>
                   <span className={`mt-1 size-4 shrink-0 rounded-full border-2 transition-colors ${sel === p.id ? "border-accent bg-accent" : "border-line"}`} />

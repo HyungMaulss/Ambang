@@ -137,7 +137,7 @@ export default function AdminPage() {
                       <span className="block truncate text-[13px] text-muted">{r.email}</span>
                     </span>
                     <span className="text-right text-[12px] text-muted">
-                      <span className={`block font-display text-[18px] ${r.lastPassed ? "text-accent" : "text-fg"}`}>{r.lastTotal ?? "—"}</span>
+                      <span className={`block font-display text-[18px] ${r.lastPassed ? "text-accent-ink" : "text-fg"}`}>{r.lastTotal ?? "—"}</span>
                       {r.tryoutCount} tryout
                     </span>
                   </button>
@@ -287,7 +287,7 @@ function UserDetail({ id }: { id: string }) {
                 <span className="block font-medium">{excelTitle(x.exercise_id)}</span>
                 <span className="text-[13px] text-muted">{when(x.created_at)}</span>
               </span>
-              <span className={`font-display text-[22px] ${x.score === 100 ? "text-accent" : ""}`}>{Math.round(x.score)}%</span>
+              <span className={`font-display text-[22px] ${x.score === 100 ? "text-accent-ink" : ""}`}>{Math.round(x.score)}%</span>
             </li>
           ))}
           {!d.excel.length && <li className="py-4 text-[14px] text-muted">Belum ada latihan Excel yang dinilai.</li>}
