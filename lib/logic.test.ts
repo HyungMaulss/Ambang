@@ -63,3 +63,35 @@ test("rumus Excel: ; jadi , kecuali di dalam string", () => {
   assert.ok(usesFunction("=xlookup(A1,B:B,C:C)", "XLOOKUP"));
   assert.ok(!usesFunction("=VLOOKUP(A1,B:C,2)", "LOOKUP"));
 });
+
+import { canInsertRef, currentFunction, fnPrefix, rangeText, refsIn, shiftFormula, upperFormula } from "./excel-formula.ts";
+
+test("editor Excel: geser rumus saat disalin/diisi", () => {
+  assert.equal(shiftFormula("=B2*C2", 1, 0), "=B3*C3");
+  assert.equal(shiftFormula("=ROUND(B2/$B$5*100;1)", 2, 0), "=ROUND(B4/$B$5*100;1)");
+  assert.equal(shiftFormula("=$A2+B$1", 3, 1), "=$A5+C$1");
+  assert.equal(shiftFormula('=IF(A1="B2";LOG10(A1);0)', 1, 0), '=IF(A2="B2";LOG10(A2);0)');
+  assert.equal(shiftFormula("=A1", -1, 0), "=#REF!");
+  assert.equal(shiftFormula("teks A1", 1, 0), "teks A1");
+  assert.equal(upperFormula('=sum(b2:b4)&"abc"'), '=SUM(B2:B4)&"abc"');
+});
+
+test("editor Excel: referensi, titik sisip, saran, petunjuk argumen", () => {
+  assert.equal(rangeText({ r: 4, c: 3 }, { r: 1, c: 1 }), "B2:D5");
+  assert.equal(rangeText({ r: 0, c: 0 }, { r: 0, c: 0 }), "A1");
+  const refs = refsIn('=SUM(B2:B4)+$C$1+"D9"');
+  assert.deepEqual(refs.map((r) => [r.text, r.start, r.end]), [["B2:B4", 5, 10], ["$C$1", 12, 16]]);
+  assert.deepEqual(refs[0].to, { r: 3, c: 1 });
+  assert.ok(canInsertRef("=SUM("));
+  assert.ok(canInsertRef("=B2*"));
+  assert.ok(canInsertRef("=IF(A1>0; "));
+  assert.ok(!canInsertRef("=SUM(B2"));
+  assert.ok(!canInsertRef('=IF(A1="'));
+  assert.ok(!canInsertRef("teks+"));
+  assert.equal(fnPrefix("=SUM(xl"), "xl");
+  assert.equal(fnPrefix("=B2"), null);
+  assert.equal(fnPrefix("=IF(A1>0;vl"), "vl");
+  assert.deepEqual(currentFunction("=IF(A1>0;VLOOKUP(E2;A2:B4;"), { name: "VLOOKUP", arg: 2 });
+  assert.deepEqual(currentFunction("=IF(A1>0;SUM(B2:B3);"), { name: "IF", arg: 2 });
+  assert.equal(currentFunction("=B2*C2"), null);
+});

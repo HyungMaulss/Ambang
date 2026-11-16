@@ -53,7 +53,7 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
       <section className="anim-fade-up flex min-w-0 flex-col gap-8" style={{ animationDelay: "100ms" }}>
         <div className="flex flex-col gap-2">
           <p className="eyebrow">Praktik</p>
-          <ExcelLab ex={l.exercise} />
+          <ExcelLab key={l.exercise.id} ex={l.exercise} />
         </div>
         {next && (
           <Link href={`/excel/${next.slug}`} className="btn btn-secondary self-start">
